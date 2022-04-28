@@ -1,0 +1,17 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    src: url($furl) format('woff2');
+  }
+}
+
+@include font('IBM Plex Sans', normal, 400, '../fonts/IBMPlexSans-Regular.woff2');
+@include font('IBM Plex Sans', normal, 500, '../fonts/IBMPlexSans-Medium.woff2');
+@include font('IBM Plex Sans', normal, 600, '../fonts/IBMPlexSans-SemiBold.woff2');
+@include font('IBM Plex Sans', normal, 700, '../fonts/IBMPlexSans-Bold.woff2');
+@include font('IBM Plex Sans', normal, 400, '../fonts/IBMPlexSans-Regular.woff');
+@include font('IBM Plex Sans', normal, 500, '../fonts/IBMPlexSans-Medium.woff');
+@include font('IBM Plex Sans', normal, 600, '../fonts/IBMPlexSans-SemiBold.woff');
+@include font('IBM Plex Sans', normal, 700, '../fonts/IBMPlexSans-Bold.woff');

@@ -1,0 +1,1717 @@
+.main {
+  padding-top: 38.2rem;
+  position: relative;
+
+  &__circle {
+    left: 114.6rem;
+    top: -35.1rem;
+    width: 85.3rem;
+    height: 85.3rem;
+
+    &_purple {
+      width: 52.8rem;
+      height: 52.8rem;
+      left: 148.4rem;
+      top: 29.5rem;
+      z-index: 2;
+    }
+  }
+
+  &__row {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+
+  &-text {
+    &__caption {
+      max-width: 46.7rem;
+      margin-top: 2.7rem;
+      margin-bottom: 2.8rem;
+    }
+
+    &__link {
+      margin-top: 26.8rem;
+      display: block;
+    }
+
+    &__svg {
+      height: 2.8rem;
+      width: 1.9rem;
+    }
+  }
+
+  &-button {
+    &__row {
+      display: flex;
+      align-items: center;
+    }
+
+    &-video {
+      width: fit-content;
+      max-width: 100%;
+      height: auto;
+      margin-left: 4.9rem;
+    }
+
+    &__icon {
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: 1.2rem;
+    }
+  }
+
+  &-comment {
+    &__img {
+      width: 64.5rem;
+      height: 83.7rem;
+      display: block;
+      position: absolute;
+      top: -23.2rem;
+      right: -2.4rem;
+      z-index: 1;
+
+      &_rotate {
+        width: 17rem;
+        height: 16.9rem;
+        position: absolute;
+        top: -10.6rem;
+        right: -10.7rem;
+        z-index: 2;
+      }
+    }
+
+    &__block {
+      background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.48) 1.57%, rgba(196, 196, 196, 0.06) 100%);
+      backdrop-filter: blur(11px);
+      border: 1px solid #eeeeee;
+      border-radius: 10px;
+      padding: 1.7rem 1.9rem 1.6rem;
+      width: 28.9rem;
+      position: absolute;
+      z-index: 3;
+
+      &_left {
+        bottom: 9.5rem;
+        right: 44rem;
+      }
+
+      &_right {
+        top: 11.4rem;
+        right: -20.6rem;
+      }
+    }
+
+    &__head {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 2.3rem;
+      margin-bottom: 1.1rem;
+    }
+
+    &__icon {
+      width: 3rem;
+      height: 3rem;
+      margin-right: 1rem;
+    }
+
+    &__text {
+      padding-left: 5px;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.program {
+  padding-top: 15rem;
+  padding-bottom: 13.8rem;
+  position: relative;
+
+  &__circle {
+    width: 53.5rem;
+    height: 53.5rem;
+    left: -12rem;
+    top: 81.3rem;
+
+    &_purple {
+      width: 85.3rem;
+      height: 85.3rem;
+      opacity: 0.1;
+      right: -28.7rem;
+      left: auto;
+      top: 12.1rem;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+  }
+
+  &__row {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__texts {
+    width: 56.4rem;
+  }
+
+  &__head {
+    max-width: 56.4rem;
+  }
+
+  &__caption {
+    margin-top: 3.3rem;
+    margin-bottom: 5.7rem;
+    width: 50rem;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 6.3rem 1fr;
+    margin-bottom: 3rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__count {
+    width: 4rem;
+    height: 4rem;
+    background: #68C7F2;
+    border-radius: 1.2rem;
+    font-weight: 600;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2.3rem;
+  }
+
+  &__subtitle, b {
+    font-weight: 600;
+    margin-top: .9rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  &-img {
+    &__group {
+      padding-right: 11.8rem;
+      margin-top: -18.6rem;
+      width: fit-content;
+    }
+
+    &__img {
+      &_big {
+        width: 47.4rem;
+        margin-left: auto;
+      }
+
+      &_small {
+        width: 39.7rem;
+        height: 35.2rem;
+        position: absolute;
+        right: 0;
+        bottom: 10rem;
+        z-index: 3;
+      }
+    }
+  }
+
+  &-business {
+    margin-top: 13.8rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      max-width: 30.8rem;
+    }
+
+    &__list {
+      max-width: 86.8rem;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin: -1.5rem;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      padding: 1.5rem;
+    }
+
+    &__text {
+      max-width: 16rem;
+
+      &_width-small {
+        max-width: 13.9rem;
+      }
+    }
+
+    &__subtitle {
+      font-weight: 700;
+      font-size: 4.8rem;
+      line-height: 6.2rem;
+      color: $blue;
+      margin-bottom: 1.7rem;
+    }
+  }
+}
+
+.marketing {
+  position: relative;
+
+  &__circle {
+    width: 85.3rem;
+    height: 85.3rem;
+    right: -23.2rem;
+    top: 0;
+    opacity: 0.1;
+  }
+
+  &__title {
+    text-align: right;
+    max-width: 67.1rem;
+    margin-bottom: 9.1rem;
+    margin-left: auto;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(27.4rem, 1fr);
+    margin: -3.55rem;
+  }
+
+  &__column {
+    padding: 3.55rem;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__card {
+    background: $white;
+    box-shadow: 0px 36px 47px -18px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 3.9rem 1.8rem 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__icon {
+    width: 5.7rem;
+    height: 5.7rem;
+    background: $blue;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__svg {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    &_big-width {
+      width: 2.6rem;
+    }
+  }
+
+  &__subtitle {
+    margin: 2.6rem 0 1.2rem;
+    font-weight: 600;
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+
+    &_big {
+      margin-right: -1.8rem;
+    }
+  }
+
+  &__text {
+    &_small {
+      max-width: 17rem;
+    }
+  }
+}
+
+.customers {
+  padding-top: 15.8rem;
+  padding-bottom: 13.8rem;
+  position: relative;
+
+  &__circle {
+    width: 52.8rem;
+    height: 52.8rem;
+    right: -24.5rem;
+    top: 15.8rem;
+  }
+
+  &__row {
+    background-image: url('../images/customers.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 3.9rem;
+    padding: 8.4rem 10rem 7.7rem 11rem;
+    display: grid;
+    grid-template-columns: 59.1rem 1fr;
+  }
+
+  &__title {
+    text-align: right;
+    margin-left: auto;
+    margin-top: -0.6rem;
+    max-width: 40.6rem;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  &__btn {
+    margin-left: auto;
+    margin-bottom: 9.9rem;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  &__grid {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: -4rem -4.8rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__icon {
+    width: 10.0rem;
+    height: 9.5rem;
+    margin-bottom: 2.1rem;
+  }
+
+  &__text {
+    &_small {
+      max-width: 24.4rem;
+    }
+  }
+
+  &__column {
+    padding: 4rem 4.8rem;
+  }
+}
+
+.wish {
+  padding-bottom: 13.8rem;
+  position: relative;
+
+  &__circle {
+    width: 85.3rem;
+    height: 85.3rem;
+    left: -30.6rem;
+    top: -26.5rem;
+  }
+
+  &__title {
+    max-width: 91.4rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__caption {
+    max-width: 48.4rem;
+    margin-top: 3.2rem;
+    margin-bottom: 3.1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.rates {
+  position: relative;
+
+  &__circle {
+    width: 53.5rem;
+    height: 53.5rem;
+    right: -18.5rem;
+    top: -2.7rem;
+    opacity: 0.2;
+  }
+
+  &__title {
+    margin-bottom: 4.8rem;
+  }
+
+  &__list {
+    border-bottom: 1px solid $black;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5.4rem 0;
+    border-top: 1px solid $black;
+  }
+
+  &__subtitle {
+    margin-bottom: 2.4rem;
+    display: flex;
+    align-items: center;
+
+    &_circle {
+      display: flex;
+      align-items: center;
+
+      &:before {
+        content: '';
+        width: .9rem;
+        height: .9rem;
+        background: $grey-light;
+        border-radius: 50%;
+        margin-left: 2.3rem;
+        margin-right: 2.4rem;
+        display: block;
+      }
+    }
+  }
+
+  &__text {
+    max-width: 36.3rem;
+  }
+
+  &__icon {
+    background: $black;
+    border-radius: 50%;
+    width: 6.4rem;
+    height: 6.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__svg {
+    height: 2.2rem;
+    width: 1.5rem;
+  }
+}
+
+.partners {
+  padding-top: 13.8rem;
+  padding-bottom: 13.6rem;
+
+  &__title {
+    margin-bottom: 6.9rem;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: -9.4rem;
+  }
+
+  &__column {
+    padding: 9.4rem;
+  }
+
+  &__img {
+    max-width: 23.0rem;
+    max-height: 13.2rem;
+  }
+}
+
+@media only screen and (max-width: $large-tablet) {
+  .main {
+    padding-top: 25.5rem;
+
+    &__circle {
+      left: 53.3rem;
+      top: -30.6rem;
+
+      &_purple {
+        left: 87.1rem;
+        top: 34.0rem;
+      }
+    }
+
+    &-text {
+      max-width: 48rem;
+
+      &__caption {
+        margin-top: 1.9rem;
+      }
+
+      &__link {
+        margin-top: 16.4rem;
+      }
+    }
+
+    &-comment {
+      &__img {
+        width: 46.7rem;
+        height: 62.0rem;
+        top: -10.9rem;
+        right: -4rem;
+
+        &_rotate {
+          width: 11.9rem;
+          height: 11.8rem;
+          top: -2.6rem;
+          right: -10rem;
+        }
+      }
+
+      &__block {
+        border-radius: 0.7rem;
+        padding: 1.2rem 1.3rem 1.3rem;
+        width: 20.3rem;
+
+        &_left {
+          bottom: auto;
+          right: 23.4rem;
+          top: 33.6rem;
+        }
+
+        &_right {
+          top: 14.2rem;
+          right: -16.9rem;
+        }
+      }
+
+      &__head {
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+        margin-bottom: 0.7rem;
+      }
+
+      &__icon {
+        width: 2.1rem;
+        height: 2.1rem;
+        margin-right: 0.7rem;
+      }
+
+      &__text {
+        padding-left: 3px;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .program {
+    padding-top: 11rem;
+    padding-bottom: 13.6rem;
+
+    &__circle {
+      left: -43.5rem;
+      top: 103.6rem;
+
+      &_purple {
+        right: -57rem;
+        left: auto;
+        top: 37.3rem;
+      }
+    }
+
+    &__row {
+      position: relative;
+    }
+
+    &__list {
+      max-width: 54rem;
+    }
+
+    &-img {
+      &__group {
+        padding: 0;
+        margin: 0;
+      }
+
+      &__img {
+        &_big {
+          width: 42.2rem;
+          margin: 0;
+          position: absolute;
+          right: -15.8rem;
+          top: -18.3rem;
+        }
+
+        &_small {
+          width: 39.7rem;
+          height: 35.2rem;
+          right: -10.6rem;
+          bottom: -5rem;
+        }
+      }
+    }
+
+    &-business {
+      margin-top: 20.7rem;
+      flex-direction: column;
+
+      &__list {
+        max-width: 100%;
+      }
+
+      &__title {
+        max-width: 100%;
+        margin-bottom: 4.5rem;
+      }
+    }
+  }
+
+  .marketing {
+    &__circle {
+      right: -51.5rem;
+      top: 37rem;
+    }
+
+    &__title {
+      margin-bottom: 7.2rem;
+    }
+
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: minmax(27.4rem, 1fr);
+      margin: -1.5rem;
+    }
+
+    &__column {
+      padding: 1.5rem;
+
+      &:nth-child(2n) {
+        .marketing__card {
+          margin-right: auto;
+          margin-left: 0;
+        }
+      }
+    }
+
+    &__card {
+      max-width: 27.4rem;
+      margin-left: auto;
+    }
+  }
+
+  .customers {
+    padding-top: 12.8rem;
+    padding-bottom: 10.5rem;
+
+    &__circle {
+      right: -42.8rem;
+      top: 10.4rem;
+    }
+
+    &__row {
+      padding: 7.8rem 16.6rem 5.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      background-image: url('../images/customers2.png');
+    }
+
+    &__title {
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin: 0 auto 5.9rem;
+      text-align: center;
+      max-width: 100%;
+    }
+
+    &__btn {
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin-bottom: 0;
+      margin-top: 6.4rem;
+      margin-right: auto;
+    }
+
+    &__grid {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      margin: -2.5rem -4.4rem;
+    }
+
+    &__column {
+      padding: 2.5rem 4.3rem;
+    }
+  }
+
+  .wish {
+    padding-bottom: 14rem;
+
+    &__circle {
+      left: -63.9rem;
+      top: -49.8rem;
+    }
+  }
+
+  .rates {
+    &__circle {
+      right: -46.8rem;
+      top: -16.2rem;
+    }
+  }
+
+  .partners {
+    padding: 9.9rem 0;
+
+    &__grid {
+      margin: -1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__column {
+      padding: 1.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $small-tablet) {
+  .main {
+    padding-top: 26.9rem;
+
+    &__circle {
+      left: 25.3rem;
+      top: -30.6rem;
+
+      &_purple {
+        left: 59.1rem;
+        top: 34.0rem;
+      }
+    }
+
+    &-text {
+      &__title {
+        max-width: 34.3rem;
+      }
+
+      &__caption {
+        max-width: 25.3rem;
+        margin: 1.3rem 0;
+      }
+
+      &__link {
+        margin-top: 13rem;
+      }
+
+      &__svg {
+        height: 2.8rem;
+        width: 1.9rem;
+      }
+    }
+
+    &-button {
+      &__row {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      &-video {
+        margin: 3.9rem 0 0 0;
+      }
+    }
+
+    &-comment {
+      &__img {
+        top: -16.8rem;
+        right: -12.5rem;
+
+        &_rotate {
+          display: none;
+        }
+      }
+
+      &__block {
+        width: 20.2rem;
+
+        &_left {
+          right: 13rem;
+          top: 28.7rem;
+        }
+
+        &_right {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .program {
+    padding-top: 12.5rem;
+    padding-bottom: 7.6rem;
+
+    &__caption {
+      margin-top: 1.9rem;
+      margin-bottom: 5.9rem;
+      max-width: 30.9rem;
+    }
+
+    &__list {
+      max-width: 36.2rem;
+    }
+
+    &__item {
+      margin-bottom: 1.2rem;
+    }
+
+    &-img {
+      &__img {
+        &_big {
+          width: 47.4rem;
+          right: -25.8rem;
+          top: -15.3rem;
+        }
+
+        &_small {
+          width: 28.8rem;
+          height: 25.5rem;
+          right: -9.7rem;
+          bottom: 4.2rem;
+        }
+      }
+    }
+
+    &-business {
+      margin-top: 10.6rem;
+
+      &__list {
+        margin: -1.5rem -0.5rem;
+      }
+
+      &__item {
+        padding: 1.5rem 0.5rem;
+
+        &:first-child {
+          .program-business__text {
+            max-width: 15rem;
+          }
+        }
+      }
+
+      &__text {
+        max-width: 14rem;
+      }
+    }
+  }
+
+  .marketing {
+    &__circle {
+      top: 16rem;
+    }
+
+    &__title {
+      margin-bottom: 5.7rem;
+    }
+
+    &__grid {
+      margin: -3.3rem -2.8rem;
+    }
+
+    &__column {
+      padding: 3.3rem 2.8rem;
+    }
+  }
+
+  .customers {
+    padding-top: 13.5rem;
+    padding-bottom: 35.8rem;
+
+    &__circle {
+      right: -42.8rem;
+      top: 10.4rem;
+    }
+
+    &__row {
+      padding: 7.8rem 2.7rem 5.5rem 3rem;
+      background-image: url('../images/customers3.png');
+    }
+
+    &__title {
+      font-size: 4.8rem;
+      line-height: 6.2rem;
+    }
+  }
+
+  .wish {
+    padding-bottom: 9.3rem;
+
+    &__circle {
+      left: -52.9rem;
+      top: -47.8rem;
+    }
+
+    &__title {
+      margin-left: -1rem;
+      margin-right: -1rem;
+    }
+
+    &__caption {
+      margin: 2.8rem auto;
+    }
+  }
+
+  .rates {
+    &__circle {
+      top: -15.2rem;
+    }
+
+    &__title {
+      font-size: 4.8rem;
+      line-height: 6.2rem;
+    }
+  }
+
+  .partners {
+    padding: 9.9rem 0 9.6rem;
+
+    &__title {
+      font-size: 4.8rem;
+      line-height: 6.2rem;
+    }
+
+    &__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: center;
+      margin: -2.95rem;
+    }
+
+    &__column {
+      padding: 2.95rem;
+      display: flex;
+      justify-content: flex-end;
+
+      &:nth-child(2n) {
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $small-mobile) {
+  .main {
+    padding-top: 6.8rem;
+
+    &__circle {
+      left: 25.3rem;
+      top: -30.6rem;
+
+      &_purple {
+        left: 33.1rem;
+        top: 34.0rem;
+      }
+    }
+
+    &__row {
+      flex-direction: column-reverse;
+    }
+
+    &-comment {
+      &__img {
+        position: relative;
+        width: 30.7rem;
+        height: auto;
+        margin-left: 2.49rem;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        &_rotate {
+          display: block;
+          top: 4.5rem;
+          right: 0;
+          left: 27.5rem;
+          width: 10.8rem;
+          height: 10.7rem;
+        }
+      }
+
+      &__block {
+        width: 19.9rem;
+
+        &_left {
+          right: 0;
+          left: -1.4rem;
+          top: 32.4rem;
+        }
+
+        &_right {
+          display: block;
+          top: 19.9rem;
+          right: 0;
+          left: 25.6rem;
+          padding: 1rem 1.2rem;
+          max-width: 17.5rem;
+
+          .main-comment__head {
+            font-size: 1.1rem;
+            line-height: 1.4rem;
+          }
+
+          .main-comment__text {
+            font-size: 0.96rem;
+            line-height: 1.3rem;
+            padding: 0 3px;
+          }
+
+          .main-comment__icon {
+            margin-right: .6rem;
+            width: 1.8rem;
+            height: 1.8rem;
+          }
+        }
+      }
+    }
+
+    &-text {
+      margin-top: 5.9rem;
+
+      &__caption {
+        max-width: 33.8rem;
+        text-align: center;
+        margin: 1.4rem auto 2.3rem;
+      }
+
+      &__link {
+        display: none;
+      }
+    }
+
+    &-button {
+      &__row {
+        align-items: center;
+      }
+    }
+  }
+
+  .program {
+    padding-bottom: 0;
+
+    &__circle {
+      left: -34.3rem;
+      top: 106.2rem;
+
+      &_purple {
+        right: -62.6rem;
+        left: auto;
+        top: 39.9rem;
+      }
+    }
+
+    &__row {
+      flex-direction: column-reverse;
+    }
+
+    &__title {
+      text-align: center;
+      margin: auto;
+    }
+
+    &__caption {
+      margin: 2rem auto 2.8rem;
+      text-align: center;
+    }
+
+    &-img {
+      &__group {
+        width: 100%;
+        position: relative;
+      }
+      &__img {
+        &_big {
+          margin-left: auto;
+          position: relative;
+          z-index: 3;
+          right: 0;
+          top: 0;
+          width: 33.9rem;
+          margin-right: -1.4rem;
+        }
+
+        &_small {
+          width: 30rem;
+          height: auto;
+          right: auto;
+          left: -2rem;
+          bottom: 5.6rem;
+        }
+      }
+    }
+
+    &__list {
+      margin-top: 4.9rem;
+    }
+
+    &__texts {
+      width: 100%;
+    }
+
+    &-business {
+      margin-top: 5.3rem;
+
+      &__title {
+        text-align: center;
+        margin: 0 auto 3.6rem;
+        max-width: 22rem;
+      }
+
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        margin: -1.7rem 0;
+      }
+
+      &__item {
+        padding: 1.7rem 1.8rem 1.7rem 3.1rem;
+
+        &:nth-child(2n) {
+          padding: 1.7rem 3.1rem 1.7rem 1.8rem;
+        }
+      }
+    }
+  }
+
+  .marketing {
+    display: none;
+  }
+
+  .customers {
+    padding: 6.8rem 0;
+
+    &__circle {
+      right: -57.1rem;
+      top: -21rem;
+      width: 85.3rem;
+      height: 85.3rem;
+      background: $blue;
+      opacity: 0.1;
+    }
+
+    &__row {
+      background-image: url('../images/customers4.png');
+      padding: 7.4rem 6.3rem 8.4rem 6.4rem;
+    }
+
+    &__title {
+      font-size: 2.4rem;
+      line-height: 3.1rem;
+      margin-bottom: 5.8rem;
+    }
+
+    &__grid {
+      margin: -2.6rem 0;
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+
+    &__column {
+      padding: 2.6rem 0;
+    }
+
+    &__icon {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2.3rem;
+    }
+
+    &__text {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    &__btn {
+      display: none;
+    }
+  }
+
+  .wish {
+    padding-bottom: 10.9rem;
+
+    &__circle {
+      left: -52.9rem;
+      top: -54.3rem;
+      width: 85.3rem;
+      height: 85.3rem;
+      opacity: 0.2;
+    }
+
+    &__title, &__caption {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__title {
+      max-width: 33rem;
+
+      br {
+        display: none;
+      }
+    }
+
+    &__caption {
+      max-width: 30.4rem;
+      margin: 2.4rem auto 3.4rem;
+    }
+  }
+
+  .rates {
+    &__circle {
+      display: none;
+    }
+
+    &__title {
+      font-size: 2.4rem;
+      line-height: 3.1rem;
+      margin-bottom: 3.4rem;
+    }
+
+    &__item {
+      padding: 4rem 0;
+    }
+
+    &__subtitle {
+      font-size: 1.8rem;
+      line-height: 2.3rem;
+      margin-bottom: 1.3rem;
+      justify-content: flex-start;
+
+      &_circle:before {
+        margin: 0 1.5rem;
+      }
+    }
+
+    &__texts {
+      max-width: 25.6rem;
+    }
+
+    &__icon {
+      width: 4.8rem;
+      height: 4.8rem;
+    }
+  }
+
+  .partners {
+    padding-top: 5.3rem;
+
+    &__title {
+      font-size: 2.4rem;
+      line-height: 3.1rem;
+      margin-bottom: 3.3rem;
+    }
+
+    &__grid {
+      margin: -1.35rem 0;
+    }
+
+    &__column {
+      padding: 1.35rem 2.95rem 1.35rem 4.1rem;
+
+      &:nth-child(2n) {
+        padding: 1.35rem 4.1rem 1.35rem 2.95rem;
+      }
+
+      &:nth-child(1) {
+        .partners__img {
+          width: 15.3rem;
+          height: 4.5rem;
+        }
+      }
+
+      &:nth-child(2) {
+        .partners__img {
+          width: 13.3rem;
+          height: 7.5rem;
+        }
+      }
+
+      &:nth-child(3) {
+        .partners__img {
+          width: 11.5rem;
+          height: 4.8rem;
+        }
+      }
+
+      &:nth-child(4) {
+        .partners__img {
+          height: 8.3rem;
+          width: 8.3rem;
+        }
+      }
+    }
+
+    &__img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+}
+
+@media only screen and (max-width: $tiny-mobile) {
+  .main {
+    padding-top: 5.1rem;
+
+    &__circle {
+      width: 63.8rem;
+      height: 63.8rem;
+      left: 18.9rem;
+      top: -22.9rem;
+
+      &_purple {
+        width: 39.5rem;
+        height: 39.5rem;
+        left: 24.7rem;
+        top: 25.4rem;
+
+      }
+    }
+
+    &-comment {
+      &__img {
+        width: 22.9rem;
+        height: auto;
+        margin-left: 1.8rem;
+
+        &_rotate {
+          display: block;
+          top: 3.3rem;
+          right: 0;
+          left: 20.8rem;
+          width: 8.1rem;
+          height: 8rem;
+        }
+      }
+
+      &__head {
+        font-size: 1rem;
+        line-height: 1.3rem;
+      }
+
+      &__text {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        padding: 0 3px;
+      }
+
+      &__icon {
+        margin-right: .6rem;
+        width: 1.7rem;
+        height: 1.7rem;
+      }
+
+      &__block {
+        width: 16.4rem;
+        padding: 1rem 1.1rem;
+
+        &_left {
+          left: -1.1rem;
+          top: 24.1rem;
+        }
+
+        &_right {
+          top: 15rem;
+          left: 19.3rem;
+          width: 13.1rem;
+          padding: 0.8rem 0.9rem;
+
+          .main-comment__head {
+            font-size: 0.8rem;
+            line-height: 1.1rem;
+          }
+
+          .main-comment__text {
+            font-size: 0.7rem;
+            line-height: 0.9rem;
+            padding: 0 2px;
+          }
+
+          .main-comment__icon {
+            margin-right: .5rem;
+            width: 1.4rem;
+            height: 1.4rem;
+          }
+        }
+      }
+    }
+
+    &-text {
+      margin-top: 4.5rem;
+
+      &__caption {
+        max-width: 25rem;
+        margin: 1.5rem auto 1.8rem;
+      }
+    }
+
+    &-button {
+      &-video {
+        margin-top: 2.1rem;
+      }
+    }
+  }
+
+  .program {
+    padding-top: 9.2rem;
+
+    &__circle {
+      width: 40rem;
+      height: 40rem;
+      left: -25.6rem;
+      top: 77.6rem;
+      opacity: 0.15;
+
+      &_purple {
+        width: 63.8rem;
+        height: 63.8rem;
+        right: -46.8rem;
+        left: auto;
+        top: 28rem;
+      }
+    }
+
+    &__caption {
+      max-width: 25rem;
+      margin: 1.1rem auto 2rem;
+      text-align: center;
+    }
+
+    &-img {
+      &__img {
+        &_big {
+          width: 25.3rem;
+          margin-right: -1.1rem;
+        }
+
+        &_small {
+          width: 22.4rem;
+          right: auto;
+          left: 0;
+          bottom: 4.2rem;
+        }
+      }
+    }
+
+    &__list {
+      margin-top: 2.9rem;
+    }
+
+    &__item {
+      grid-template-columns: 4.7rem 1fr;
+      margin-bottom: 1.3rem;
+    }
+
+    &__subtitle, b {
+      margin: 6px 0;
+    }
+
+    &__count {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.2rem;
+      margin-right: 1.7rem;
+    }
+
+    &-business {
+      margin-top: 2.8rem;
+
+      &__title {
+        margin: 0 auto 2.7rem;
+        max-width: 20rem;
+      }
+
+      &__subtitle {
+        font-size: 3.4rem;
+        line-height: 4.4rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &__list {
+        margin: -1.8rem 0;
+      }
+
+      &__item {
+        padding: 1.8rem .8rem 1.8rem 1.8rem;
+
+        &:nth-child(2n) {
+          padding: 1.8rem 1.8rem .8rem 1.8rem;
+        }
+      }
+    }
+  }
+
+  .customers {
+    padding: 5rem 0;
+
+    &__circle {
+      right: -57.1rem;
+      top: -33rem;
+      width: 63.8rem;
+      height: 63.8rem;
+    }
+
+    &__row {
+      background-image: url('../images/customers5.png');
+      padding: 5.5rem 3.9rem 5.5rem 4.7rem;
+    }
+
+    &__title {
+      font-size: 1.8rem;
+      line-height: 2.3rem;
+      margin-bottom: 4.4rem;
+    }
+
+    &__grid {
+      margin: -1.7rem 0;
+    }
+
+    &__column {
+      padding: 1.7rem 0;
+    }
+
+    &__icon {
+      width: 7.4rem;
+      height: 7.1rem;
+      margin-bottom: 1.7rem;
+    }
+  }
+
+  .wish {
+    padding-bottom: 8.2rem;
+
+    &__circle {
+      right: -39.6rem;
+      top: -40.5rem;
+      width: 63.8rem;
+      height: 63.8rem;
+    }
+
+    &__title {
+      max-width: 25rem;
+    }
+
+    &__caption {
+      max-width: 23.7rem;
+      margin: 1.8rem auto 2.2rem;
+    }
+  }
+
+  .rates {
+    &__title {
+      font-size: 1.8rem;
+      line-height: 2.3rem;
+      margin-bottom: 2.6rem;
+    }
+
+    &__item {
+      padding: 3.1rem 0;
+    }
+
+    &__subtitle {
+      font-size: 1.3rem;
+      line-height: 1.7rem;
+      margin-bottom: .9rem;
+
+      &_circle:before {
+        margin: 0 1.1rem;
+        height: .7rem;
+        width: .7rem;
+      }
+    }
+
+    &__texts {
+      max-width: 19rem;
+    }
+
+    &__icon {
+      width: 3.6rem;
+      height: 3.6rem;
+    }
+
+    &__svg {
+      width: 1.1rem;
+      height: 1.1rem;
+    }
+  }
+
+  .partners {
+    padding-top: 4rem;
+    padding-bottom: 8.9rem;
+
+    &__title {
+      font-size: 1.8rem;
+      line-height: 2.3rem;
+      margin-bottom: 2.5rem;
+    }
+
+    &__grid {
+      margin: -1rem 0;
+    }
+
+    &__column {
+      padding: 1rem 2.2rem 1rem 2rem;
+
+      &:nth-child(2n) {
+        padding: 1rem 2rem 1rem 2.2rem;
+      }
+
+      &:nth-child(1) {
+        .partners__img {
+          width: 11.4rem;
+          height: 3.4rem;
+        }
+      }
+
+      &:nth-child(2) {
+        .partners__img {
+          width: 9.9rem;
+          height: 5.6rem;
+        }
+      }
+
+      &:nth-child(3) {
+        .partners__img {
+          width: 8.6rem;
+          height: 3.6rem;
+        }
+      }
+
+      &:nth-child(4) {
+        .partners__img {
+          width: 6.2rem;
+          height: 6.2rem;
+        }
+      }
+    }
+  }
+}

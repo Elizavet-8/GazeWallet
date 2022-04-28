@@ -1,0 +1,355 @@
+// general
+html {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button {
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+
+  &:active, &:focus, &:hover {
+    color: $black;
+  }
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+  color: $black;
+  background-image: url('../images/back.png');
+  background-repeat: repeat;
+  overflow-x: hidden;
+
+  &.overflow {
+    overflow: hidden;
+  }
+
+  .container {
+    max-width: 141rem;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 0 0 2.5rem 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 100vw  / (1920/10);
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+button, .link {
+  background: $black;
+  color: $white;
+  border: 1px solid $black;
+  border-radius: 1px;
+  height: 5.5rem;
+  width: 100%;
+  max-width: 25.3rem;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
+  &:after {
+    content: '';
+    height: 1.4rem;
+    width: 1.4rem;
+    background-image: url('../images/icons/arrow.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 1.5rem;
+  }
+
+  &.border {
+    color: $black;
+    background: transparent;
+
+    &:after {
+      display: none;
+    }
+  }
+
+  &.border-white {
+    background: transparent;
+    border: 1px solid $white;
+  }
+
+  &.border-none {
+    border: none;
+  }
+}
+
+.logo {
+  width: 11.1rem;
+  height: 2.7rem;
+  display: block;
+  position: relative;
+  z-index: 999;
+
+  &__svg {
+    width: 100%;
+    height: 100%;
+
+    &_white {
+      path {
+        fill: $white;
+      }
+    }
+
+    &_black {
+      path {
+        fill: $black;
+      }
+    }
+  }
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 6.8rem;
+  line-height: 8.8rem;
+  max-width: 74rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.2rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 3.4rem;
+  line-height: 4.4rem;
+}
+
+.ellipse {
+  position: absolute;
+  background: #68C7F2;
+  opacity: 0.3;
+  filter: blur(205px);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.border-none {
+  border: none;
+}
+
+.circle {
+  position: absolute;
+  opacity: 0.3;
+  filter: blur(205px);
+  z-index: 1;
+  background: $blue;
+  &_purple {
+    background: $purple;
+  }
+}
+
+@media only screen and (max-width: $large-desktop) {
+  html {
+    font-size: 100vw / (1600/10);
+  }
+}
+
+@media only screen and (max-width: $small-desktop) {
+  body {
+    font-size: 1.9rem;
+  }
+}
+
+@media only screen and (max-width: $large-tablet) {
+  html {
+    font-size: 100vw / (1024/10);
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  main {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: $small-tablet) {
+  html {
+    font-size: 100vw / (744/10);
+  }
+  h1 {
+    font-size: 4.8rem;
+    line-height: 6.2rem;
+  }
+  h2 {
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+  }
+}
+
+@media only screen and (max-width: $large-mobile) {
+  html {
+    font-size: 100vw / (700/10);
+  }
+  body .container {
+    padding: 0 3.5rem;
+  }
+}
+
+@media only screen and (max-width: $small-mobile) {
+  html {
+    font-size: 100vw / (428/10);
+  }
+  body .container {
+    padding: 0 1.4rem;
+  }
+  h1 {
+    font-size: 3.4rem;
+    line-height: 4.4rem;
+    text-align: center;
+    margin: auto;
+  }
+  h2, h3 {
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+  }
+}
+
+@media only screen and (max-width: $tiny-mobile) {
+  html {
+    font-size: 100vw / (320/10);
+  }
+  body {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+
+    .container {
+      padding: 0 1.1rem;
+    }
+  }
+  button, .link {
+    height: 4.1rem;
+    max-width: 18.9rem;
+
+    &:after {
+      height: 1rem;
+      width: 1rem;
+      margin-left: 1.4rem;
+    }
+  }
+  h1 {
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+  }
+  h2, h3 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+}

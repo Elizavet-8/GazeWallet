@@ -1,0 +1,226 @@
+.footer {
+  background: $black;
+  color: $white;
+  padding: 8.2rem 0 6rem;
+
+  &__btn {
+    &:after {
+      display: block;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 122.7rem;
+  }
+
+  &__text {
+    max-width: 34.7rem;
+
+    &_down {
+      max-width: 100%;
+      margin-top: 9.9rem;
+    }
+  }
+
+  &-logo {
+    width: 16.3rem;
+    height: 4rem;
+    margin-bottom: 4.5rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 4.2rem;
+  }
+
+  &__item {
+    margin-bottom: 3.4rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__btn {
+    margin-top: 3.2rem;
+  }
+
+  &-contacts {
+    &__item {
+      display: flex;
+      margin-bottom: 3rem;
+      max-width: 38.7rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__svg {
+      margin-right: 1.8rem;
+      width: 2rem;
+      height: 2rem;
+
+      &_small {
+        width: 1.8rem;
+        height: 1.8rem;
+      }
+    }
+
+    &__link {
+      color: $white;
+
+      &:active, &:focus, &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $large-tablet) {
+  .footer {
+    &__column {
+      max-width: 32.2rem;
+    }
+
+    &-contacts {
+      max-width: 24.8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $small-tablet) {
+  .footer {
+    padding-top: 7.9rem;
+
+    &__row {
+      display: grid;
+      grid-template-columns: 1fr 24.8rem;
+    }
+
+    &__column {
+      margin-bottom: 7.35rem;
+    }
+
+    &__text_down {
+      margin-top: 3.15rem;
+    }
+  }
+}
+
+@media only screen and (max-width: $small-mobile) {
+  .footer {
+    text-align: center;
+    padding-top: 6.1rem;
+    padding-bottom: 7.2rem;
+
+    &__row {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+
+    &-logo {
+      margin-bottom: 5.2rem;
+    }
+
+    &__colmn {
+      margin-bottom: 6.2rem;
+    }
+
+    &__item {
+      margin-bottom: 4rem;
+    }
+
+    &__subtitle {
+      margin-bottom: 4.4rem;
+    }
+
+    &__text {
+      margin-top: -2.2rem;
+      margin-bottom: 3.7rem;
+
+      &_down {
+        margin: 0 auto;
+      }
+    }
+
+    &__btn {
+      margin: auto;
+    }
+
+    &-contacts {
+      &__colmn {
+        margin-bottom: 6.9rem;
+      }
+
+      &__item {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+      }
+
+      &__svg {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-bottom: 1.3rem;
+        margin-right: 0;
+
+        &_small {
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $tiny-mobile) {
+  .footer {
+    padding-top: 2.8rem;
+    padding-bottom: 5.2rem;
+
+    &-logo {
+      width: 12.2rem;
+      height: 3rem;
+      margin-bottom: 3.7rem;
+    }
+
+    &-contacts {
+      max-width: 16rem;
+    }
+
+    &__item {
+      margin-bottom: 3rem;
+    }
+
+    &__column {
+      margin-bottom: 4.2rem;
+    }
+
+    &__subtitle {
+      margin-bottom: 3.3rem;
+    }
+
+    &__svg {
+      width: 2.1rem;
+      height: 2.1rem;
+      margin-bottom: 1rem;
+
+      &_small {
+        width: 1.9rem;
+        height: 1.9rem;
+      }
+    }
+
+    &__text {
+      margin-top: -1.6rem;
+      margin-bottom: 2.2rem;
+      max-width: 28rem;
+
+      &_down {
+        margin: 0 auto;
+      }
+    }
+  }
+}
