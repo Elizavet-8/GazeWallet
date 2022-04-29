@@ -1,8 +1,8 @@
 {
-    "/js/app.js": "/js/app.js?id=035099681b1e4b3ab0e8b7129ea7baf2",
+    "/js/app.js": "/js/app.js?id=aa87a41fa56658e981fc7d9529b743d1",
     "/js/modal-box.min.js": "/js/modal-box.min.js?id=5bc7a20539dd2c2dc1eb0d2a1bc13bed",
     "/js/videotube.min.js": "/js/videotube.min.js?id=292fcb1165205137481d8aa70769c1a0",
-    "/css/main.css": "/css/main.css?id=714837f84ef20d640771d8f6d0e1583b",
+    "/css/main.css": "/css/main.css?id=c97d31c757fed300109cecb38f84cfb4",
     "/css/modal-box.min.css": "/css/modal-box.min.css?id=8bd19497c92b26d41b6920e4068547e8",
     "/css/videotube.min.css": "/css/videotube.min.css?id=fdc1888132b1a8566bd32b9ec779cd82",
     "/fonts/IBMPlexSans-Bold.woff": "/fonts/IBMPlexSans-Bold.woff?id=a2e6fc94e93a32cb87639b4d656c1533",
@@ -20,13 +20,15 @@
     "/images/customers3.png": "/images/customers3.png?id=8f2dea0d377af815f1de4cae1b97ed8f",
     "/images/customers4.png": "/images/customers4.png?id=b3b273462f6d1eeabe7430b3bb64b335",
     "/images/customers5.png": "/images/customers5.png?id=f207fdfc28f33a9ec365bf0268e71e35",
+    "/images/demand.svg": "/images/demand.svg?id=b08fe8d4a724cb05763e6bb11fd52bca",
     "/images/logo.svg": "/images/logo.svg?id=bb712e840800f9ca4eb4467326ca73f9",
+    "/images/main-girl.png": "/images/main-girl.png?id=b5f81848c8d4a1c82664d15dc8e1fa7b",
+    "/images/main-materials-back.png": "/images/main-materials-back.png?id=95240c3a0dd3aa19a0e68269987d4732",
+    "/images/main-materials-girl.png": "/images/main-materials-girl.png?id=657250e5081d724d1c36793bc36ed4f4",
     "/images/partners1.png": "/images/partners1.png?id=096c0d926a8d8efa5dc62fc54854ea4b",
     "/images/partners2.png": "/images/partners2.png?id=777a017b8aeff55500297238b42023d6",
     "/images/partners3.png": "/images/partners3.png?id=6804c44cff6e0f8765b6e102c1f38e5f",
     "/images/partners4.png": "/images/partners4.png?id=f767be21f04cef9924210ea96b85b5ea",
-    "/images/program-mobile.png": "/images/program-mobile.png?id=c5fda9ad1fe3f2982dc5e905374dc82f",
-    "/images/program.png": "/images/program.png?id=61401fd8399b62a39a052f366b8ba0dd",
-    "/images/demand.svg": "/images/demand.svg?id=b08fe8d4a724cb05763e6bb11fd52bca",
-    "/images/phone.png": "/images/phone.png?id=841da698a84f9b6a5da16d50f611da15"
+    "/images/phone.png": "/images/phone.png?id=841da698a84f9b6a5da16d50f611da15",
+    "/images/video-preview.png": "/images/video-preview.png?id=2885811b49f1fc6e3068888ae57cd0d0"
 }

@@ -34,5 +34,20 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     $('[type="tel"]').keyup(phoneMask);
+
+    //аккардион
+
+    $(function() {
+        // (Optional) Active an item if it has the class "active"
+        $(".materials-accordion__item.active").children(".materials-accordion__body").slideDown();
+
+        $(".materials-accordion__item").click(function() {
+            // Cancel the siblings
+            $(this).siblings(".materials-accordion__item").removeClass("active").children(".materials-accordion__body").slideUp();
+            // Toggle the item
+            $(this).toggleClass("active").children(".materials-accordion__body").slideToggle("ease-out");
+        });
+    });
+
 })
 

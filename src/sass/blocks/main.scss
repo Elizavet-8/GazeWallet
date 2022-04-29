@@ -1,6 +1,10 @@
 .main {
-  padding-top: 38.2rem;
   position: relative;
+
+  &__container {
+    height: 100%;
+    position: relative;
+  }
 
   &__circle {
     left: 114.6rem;
@@ -19,11 +23,16 @@
 
   &__row {
     display: flex;
-    position: relative;
     width: 100%;
+    padding-top: 38.2rem;
   }
 
   &-text {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    flex-direction: column;
+
     &__caption {
       max-width: 46.7rem;
       margin-top: 2.7rem;
@@ -32,6 +41,7 @@
 
     &__link {
       margin-top: 26.8rem;
+      //margin-top: 5rem;
       display: block;
     }
 
@@ -67,15 +77,38 @@
       height: 83.7rem;
       display: block;
       position: absolute;
-      top: -23.2rem;
+      top: 15.2rem;
       right: -2.4rem;
-      z-index: 1;
+      z-index: 2;
+      border-radius: 500px 0px 500px 500px;
+      overflow: hidden;
+
+      &_big {
+        height: 100%;
+        width: auto;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+      }
+
+      &_back {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        background: linear-gradient(180deg, #FBF9F5 0%, rgba(219, 235, 248, 0.46) 100%);
+        border-radius: 500px 0px 500px 500px;
+        transform: matrix(0, -1, -1, 0, 0, 0);
+        width: 63.6rem;
+        height: 64.5rem;
+      }
 
       &_rotate {
         width: 17rem;
         height: 16.9rem;
         position: absolute;
-        top: -10.6rem;
+        top: 27rem;
         right: -10.7rem;
         z-index: 2;
       }
@@ -92,12 +125,12 @@
       z-index: 3;
 
       &_left {
-        bottom: 9.5rem;
+        top: 78.6rem;
         right: 44rem;
       }
 
       &_right {
-        top: 11.4rem;
+        top: 51rem;
         right: -20.6rem;
       }
     }
@@ -455,63 +488,6 @@
     top: -2.7rem;
     opacity: 0.2;
   }
-
-  &__title {
-    margin-bottom: 4.8rem;
-  }
-
-  &__list {
-    border-bottom: 1px solid $black;
-  }
-
-  &__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5.4rem 0;
-    border-top: 1px solid $black;
-  }
-
-  &__subtitle {
-    margin-bottom: 2.4rem;
-    display: flex;
-    align-items: center;
-
-    &_circle {
-      display: flex;
-      align-items: center;
-
-      &:before {
-        content: '';
-        width: .9rem;
-        height: .9rem;
-        background: $grey-light;
-        border-radius: 50%;
-        margin-left: 2.3rem;
-        margin-right: 2.4rem;
-        display: block;
-      }
-    }
-  }
-
-  &__text {
-    max-width: 36.3rem;
-  }
-
-  &__icon {
-    background: $black;
-    border-radius: 50%;
-    width: 6.4rem;
-    height: 6.4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__svg {
-    height: 2.2rem;
-    width: 1.5rem;
-  }
 }
 
 .partners {
@@ -543,7 +519,6 @@
 @media only screen and (max-width: $large-tablet) {
   .main {
     padding-top: 25.5rem;
-
     &__circle {
       left: 53.3rem;
       top: -30.6rem;
@@ -552,6 +527,11 @@
         left: 87.1rem;
         top: 34.0rem;
       }
+    }
+
+    &__row {
+      padding-top: 0;
+      position: relative;
     }
 
     &-text {
@@ -570,14 +550,27 @@
       &__img {
         width: 46.7rem;
         height: 62.0rem;
-        top: -10.9rem;
-        right: -4rem;
+        top: -12.3rem;
+        right: -5rem;
+
+        &_big {
+          width: 100%;
+          height: auto;
+          max-height: 100%;
+        }
+
+        &_back {
+          width: 46.7rem;
+          height: 45.3rem;
+          left: -0.7rem;
+          bottom: -1.2rem;
+        }
 
         &_rotate {
           width: 11.9rem;
           height: 11.8rem;
-          top: -2.6rem;
-          right: -10rem;
+          top: -1rem;
+          right: -9.5rem;
         }
       }
 
@@ -843,6 +836,8 @@
       &__img {
         top: -16.8rem;
         right: -12.5rem;
+        width: 45.7rem;
+        height: 58.8rem;
 
         &_rotate {
           display: none;
@@ -1038,30 +1033,57 @@
       &__img {
         position: relative;
         width: 30.7rem;
-        height: auto;
+        height: 39.8rem;
         margin-left: 2.49rem;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
 
+        &_big {
+          width: 30.7rem;
+          height: 39.8rem;
+        }
+
+        &_back {
+          width: 30.2rem;
+          height: 30.7rem;
+          left: 0;
+        }
+
         &_rotate {
           display: block;
-          top: 4.5rem;
+          top: 5rem;
           right: 0;
-          left: 27.5rem;
+          left: 27.8rem;
           width: 10.8rem;
           height: 10.7rem;
         }
       }
 
+      &__head {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+      }
+
+      &__text {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+      }
+
+      &__icon {
+        margin-right: .8rem;
+        width: 2.3rem;
+        height: 2.3rem;
+      }
+
       &__block {
-        width: 19.9rem;
+        width: 20.9rem;
 
         &_left {
           right: 0;
           left: -1.4rem;
-          top: 32.4rem;
+          top: 31.4rem;
         }
 
         &_right {
@@ -1146,6 +1168,7 @@
         width: 100%;
         position: relative;
       }
+
       &__img {
         &_big {
           margin-left: auto;
@@ -1293,31 +1316,6 @@
     &__title {
       font-size: 2.4rem;
       line-height: 3.1rem;
-      margin-bottom: 3.4rem;
-    }
-
-    &__item {
-      padding: 4rem 0;
-    }
-
-    &__subtitle {
-      font-size: 1.8rem;
-      line-height: 2.3rem;
-      margin-bottom: 1.3rem;
-      justify-content: flex-start;
-
-      &_circle:before {
-        margin: 0 1.5rem;
-      }
-    }
-
-    &__texts {
-      max-width: 25.6rem;
-    }
-
-    &__icon {
-      width: 4.8rem;
-      height: 4.8rem;
     }
   }
 
@@ -1400,14 +1398,24 @@
     &-comment {
       &__img {
         width: 22.9rem;
-        height: auto;
+        height: 29.7rem;
         margin-left: 1.8rem;
+
+        &_big {
+          width: auto;
+          height: 100%;
+        }
+
+        &_back {
+          width: 22.6rem;
+          height: 22.9rem;
+          left: 0;
+        }
 
         &_rotate {
           display: block;
-          top: 3.3rem;
-          right: 0;
-          left: 20.8rem;
+          top: 4rem;
+          left: 20.5rem;
           width: 8.1rem;
           height: 8rem;
         }
@@ -1436,7 +1444,7 @@
 
         &_left {
           left: -1.1rem;
-          top: 24.1rem;
+          top: 23.3rem;
         }
 
         &_right {
@@ -1630,37 +1638,6 @@
     &__title {
       font-size: 1.8rem;
       line-height: 2.3rem;
-      margin-bottom: 2.6rem;
-    }
-
-    &__item {
-      padding: 3.1rem 0;
-    }
-
-    &__subtitle {
-      font-size: 1.3rem;
-      line-height: 1.7rem;
-      margin-bottom: .9rem;
-
-      &_circle:before {
-        margin: 0 1.1rem;
-        height: .7rem;
-        width: .7rem;
-      }
-    }
-
-    &__texts {
-      max-width: 19rem;
-    }
-
-    &__icon {
-      width: 3.6rem;
-      height: 3.6rem;
-    }
-
-    &__svg {
-      width: 1.1rem;
-      height: 1.1rem;
     }
   }
 
