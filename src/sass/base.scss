@@ -19,8 +19,8 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -173,6 +173,24 @@ button, .link {
 
     &:after {
       display: none;
+    }
+  }
+
+  &.yellow {
+    background: $yellow;
+    color: $black;
+
+    &:after {
+      background-image: url('../images/icons/arrow-black.svg');
+    }
+  }
+
+  &.black {
+    color: $black;
+    background: $white;
+
+    &:after {
+      background-image: url('../images/icons/arrow-black.svg');
     }
   }
 
@@ -375,6 +393,179 @@ h3 {
       height: 1.1rem;
     }
   }
+}
+
+.card {
+  background: $white;
+  box-shadow: 0px 36px 47px -18px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 3.9rem 1.8rem 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__icon {
+    width: 5.7rem;
+    height: 5.7rem;
+    background: $blue;
+    border-radius: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__svg {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    &_big-width {
+      width: 2.6rem;
+      height: 2.6rem;
+    }
+  }
+
+  &__subtitle {
+    margin: 2.6rem 0 1.2rem;
+    font-weight: 600;
+    font-size: 2.0rem;
+    line-height: 2.6rem;
+
+    &_big {
+      margin-right: -1.8rem;
+    }
+  }
+}
+
+.video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #000000;
+
+  &:hover {
+    .video__button-shape {
+      fill: #ff0000;
+      fill-opacity: 1;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    display: none;
+    padding: 0;
+    width: 68px;
+    height: 48px;
+    border: none;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+
+    &:focus .video__button-shape {
+      fill: #ff0000;
+      fill-opacity: 1;
+    }
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  &__button-shape {
+    fill: #212121;
+    fill-opacity: 0.8;
+  }
+
+  &__button-icon {
+    fill: #ffffff;
+  }
+
+  &__button:focus {
+    outline: none;
+  }
+
+  &--enabled {
+    cursor: pointer;
+  }
+
+  &--enabled &__button {
+    display: block;
+  }
+}
+
+label {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  display: flex;
+  margin-bottom: 1rem;
+
+  &:after {
+    content: '*';
+    font-size: 14px;
+    line-height: 18px;
+    color: $red;
+    margin-left: 1rem;
+  }
+}
+
+input {
+  background: transparent;
+  border: 1px solid $black;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: $black;
+  height: 5.5rem;
+  padding: 2rem 2.2rem;
+  width: 100%;
+}
+
+::-moz-placeholder {
+  font-weight: normal;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #B1B1B1;
+}
+
+:-moz-placeholder {
+  font-weight: normal;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #B1B1B1;
+
+}
+
+:-ms-input-placeholder {
+  font-weight: normal;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #B1B1B1;
+
+}
+
+::-webkit-input-placeholder {
+  font-weight: normal;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  color: #B1B1B1;
+
 }
 
 @media only screen and (max-width: $large-desktop) {

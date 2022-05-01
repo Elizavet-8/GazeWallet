@@ -16,6 +16,8 @@ mix.js('src/js/videotube.min.js', 'dist/js');
 mix.copy('src/fonts/*', 'dist/fonts')
 
 mix.copy('src/images/*', 'dist/images');
+mix.copy('src/images/collage/*', 'dist/images/collage');
+mix.copy('src/images/icons/*', 'dist/images/icons');
 mix.version();
 
 

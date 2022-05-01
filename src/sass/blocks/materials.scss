@@ -1,4 +1,42 @@
 .main-materials {
+  position: relative;
+
+  &__circle {
+    &_left {
+      left: -41rem;
+      top: -35.1rem;
+      width: 85.3rem;
+      height: 85.3rem;
+      opacity: 0.3;
+
+      &_purple {
+        width: 38rem;
+        height: 38rem;
+        left: 5rem;
+        top: 27.4rem;
+        z-index: 2;
+        opacity: 0.3;
+      }
+    }
+
+    &_right {
+      width: 26.1rem;
+      height: 26.1rem;
+      right: 4.4rem;
+      top: 46.4rem;
+      opacity: 0.3;
+
+      &_purple {
+        right: -26.1rem;
+        top: 52.2rem;
+        width: 52.8rem;
+        height: 52.8rem;
+        opacity: 0.3;
+        z-index: 2;
+      }
+    }
+  }
+
   &__row {
     display: flex;
     justify-content: flex-end;
@@ -51,6 +89,27 @@
 }
 
 .materials {
+  padding-top: 26.1rem;
+  padding-bottom: 17.1rem;
+  position: relative;
+
+  &__circle {
+    left: -12rem;
+    top: 97rem;
+    width: 53.5rem;
+    height: 53.5rem;
+    opacity: 0.15;
+
+    &_purple {
+      width: 85.3rem;
+      height: 85.3rem;
+      right: -24.5rem;
+      top: 30.7rem;
+      opacity: 0.2;
+      z-index: 2;
+    }
+  }
+
   &-accordion {
     &__svg {
       path {
@@ -76,7 +135,7 @@
   &-video {
     &__list {
       display: grid;
-      grid-template-columns: repeat(3,1fr);
+      grid-template-columns: repeat(3, 1fr);
       margin: -2rem -5px;
     }
 
@@ -93,6 +152,315 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+}
+
+@media only screen and (max-width: $large-tablet) {
+  .main-materials {
+    padding-top: 30.6rem;
+
+    &-text {
+      padding: 0;
+      max-width: 57.6rem;
+
+      &__btn {
+        margin-left: auto;
+      }
+
+      &__title {
+        text-align: right;
+      }
+
+      &__caption {
+        text-align: right;
+        max-width: 34.6rem;
+        margin-left: auto;
+        margin-top: 2.7rem;
+        margin-bottom: 4.1rem;
+      }
+
+      &__link {
+        margin-top: 15.8rem;
+        margin-right: 0;
+      }
+    }
+
+    &__img {
+      width: 52.2rem;
+      height: 65rem;
+      top: -13.9rem;
+      left: -15.9rem;
+
+      &_big {
+        width: 44.7rem;
+        height: 65.8rem;
+      }
+
+      &_back {
+        height: 52.2rem;
+      }
+    }
+  }
+
+  .materials {
+    padding-top: 7.2rem;
+    padding-bottom: 14.8rem;
+
+    &-video {
+      &__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: -1.55rem -1.6rem;
+      }
+
+      &__item {
+        padding: 1.55rem 1.6rem;
+      }
+
+      &__link {
+        height: 22.1rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $small-tablet) {
+  .main-materials {
+    &-text {
+      padding: 0;
+      max-width: 40.7rem;
+
+      &__caption {
+        margin-top: 2.9rem;
+      }
+
+      &__link {
+        margin-top: 20.5rem;
+      }
+    }
+
+    &__img {
+      width: 43.7rem;
+      height: 54.4rem;
+      top: -10.9rem;
+      left: -17.8rem;
+
+      &_big {
+        width: 37.4rem;
+        height: 55.1rem;
+      }
+
+      &_back {
+        height: 43.7rem;
+      }
+    }
+  }
+
+  .materials {
+    padding-top: 7.3rem;
+    padding-bottom: 11rem;
+
+    &-video {
+      &__list {
+        margin: -1.1rem;
+      }
+
+      &__item {
+        padding: 1.1rem;
+      }
+
+      &__link {
+        height: 15.4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $small-mobile) {
+  .main-materials {
+    padding-top: 6.5rem;
+
+    &-text {
+      padding: 0;
+      max-width: 100%;
+      margin-top: 3.2rem;
+
+      &__texts {
+        margin: auto;
+      }
+
+      &__title {
+        max-width: 29.2rem;
+        text-align: center;
+      }
+
+      &__caption {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 3.8rem;
+      }
+
+      &__btn {
+        margin: auto;
+      }
+    }
+
+    &__img {
+      width: 37.8rem;
+      height: 47.1rem;
+      margin: auto;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      &_big {
+        width: 32.4rem;
+        height: 47.7rem;
+        left: 2.6rem;
+      }
+
+      &_back {
+        height: 37.8rem;
+        bottom: 0;
+      }
+    }
+  }
+
+  .materials {
+    padding-top: 8.6rem;
+    padding-bottom: 5.8rem;
+
+    &-accordion {
+      border: none;
+      &__list {
+        margin-top: 2.9rem;
+      }
+
+      &__head {
+        padding: 2.9rem 0;
+      }
+
+      &__subtitle {
+        font-size: 2.4rem;
+        line-height: 3.1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      &__text {
+        max-width: 24rem;
+      }
+
+      &__svg {
+        height: 1.7rem;
+        width: 1.1rem;
+      }
+      &__body {
+        padding-top: 1.2rem;
+        padding-bottom: 4.7rem;
+      }
+    }
+
+    &-video {
+      &__list {
+        grid-template-columns: 1fr;
+        margin: 0;
+      }
+
+      &__item {
+        padding: 0;
+        margin-bottom: 3.8rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      &__link {
+        height: 15.4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $tiny-mobile) {
+  .main-materials {
+    padding-top: 5rem;
+
+    &-text {
+      margin-top: 2.4rem;
+
+      &__title {
+        max-width: 21rem;
+      }
+
+      &__caption {
+        margin-top: 1.5rem;
+        margin-bottom: 1.8rem;
+      }
+    }
+
+    &__img {
+      width: 28.8rem;
+      height: 35.9rem;
+
+      &_big {
+        width: 24.7rem;
+        height: 36.3rem;
+        left: 2rem;
+      }
+
+      &_back {
+        height: 28.8rem;
+        bottom: 0;
+      }
+    }
+  }
+
+  .materials {
+    padding-top: 8.4rem;
+    padding-bottom: 5.1rem;
+
+    &-accordion {
+      &__list {
+        margin-top: 2.7rem;
+      }
+
+      &__head {
+        padding: 1.9rem 0;
+      }
+
+      &__subtitle {
+        font-size: 1.8rem;
+        line-height: 2.3rem;
+        margin-bottom: 1.3rem;
+      }
+
+      &__text {
+        max-width: 18.6rem;
+      }
+
+      &__svg {
+        height: 1.2rem;
+        width: .8rem;
+      }
+      &__body {
+        padding-top: 1.8rem;
+        padding-bottom: 4rem;
+      }
+    }
+
+    &-video {
+
+      &__item {
+        padding: 0;
+        margin-bottom: 2.8rem;
+      }
+
+      &__link {
+        height: 14.3rem;
+      }
     }
   }
 }
