@@ -774,11 +774,15 @@
   &-form {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    align-items: end;
     margin: -.9rem;
+    align-items: start;
 
     &__group {
       padding: .9rem;
+    }
+
+    &__btn {
+      margin-top: 2.8rem;
     }
   }
 }
@@ -1265,14 +1269,9 @@
     }
 
     &-form {
-      display: grid;
       grid-template-columns: repeat(4, 1fr);
-      align-items: end;
-      margin: -.9rem;
 
       &__group {
-        padding: .9rem;
-
         &:last-child {
           grid-column-start: 1;
           grid-column-end: 5;
@@ -1758,9 +1757,7 @@
     }
 
     &-form {
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
-      align-items: end;
       margin: -1rem -.6rem;
 
       &__group {

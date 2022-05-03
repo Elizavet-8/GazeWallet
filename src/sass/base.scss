@@ -155,6 +155,7 @@ button, .link {
   align-items: center;
   justify-content: center;
   padding: 0;
+  cursor: pointer;
 
   &:after {
     content: '';
@@ -209,7 +210,7 @@ button, .link {
   height: 2.7rem;
   display: block;
   position: relative;
-  z-index: 999;
+  z-index: 99;
 
   &__svg {
     width: 100%;
@@ -519,10 +520,24 @@ label {
 
   &:after {
     content: '*';
-    font-size: 14px;
-    line-height: 18px;
     color: $red;
     margin-left: 1rem;
+  }
+
+  &.optional {
+    &:after {
+      content: '';
+    }
+  }
+
+  &.error {
+    margin-top: 3px;
+    color: $red;
+    text-align: left;
+
+    &:after {
+      content: '';
+    }
   }
 }
 
@@ -660,10 +675,6 @@ input {
     font-size: 1.1rem;
     line-height: 1.4rem;
     margin-bottom: .7rem;
-    &:after {
-      font-size: 1.1rem;
-      line-height: 1.4rem;
-    }
   }
   input {
     height: 4.1rem;

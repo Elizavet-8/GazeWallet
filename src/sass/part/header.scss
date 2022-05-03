@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9;
 
   &__burger {
     display: none;
@@ -36,8 +37,6 @@
   }
 
   &__row {
-    //display: flex;
-    //justify-content: center;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 55.5rem 1fr;
@@ -64,15 +63,23 @@
       padding: 10px;
     }
 
+    &__item {
+      &.active {
+        .header-nav__link {
+          opacity: 1;
+          text-shadow: 0 0 .6px $black, 0 0 .6px $black;
+
+          &:after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
     &__link {
       opacity: 0.4;
       transition: all 0.3s ease;
       position: relative;
-
-      &:hover {
-        opacity: 1;
-        text-shadow: 0 0 .6px $black, 0 0 .6px $black;
-      }
 
       &:after {
         display: block;
@@ -81,15 +88,19 @@
         height: 1px;
         width: 0%;
         left: 50%;
-        bottom: -8px;
+        bottom: -.8rem;
         position: absolute;
         transition: width 0.3s ease-in-out;
         transform: translateX(-50%);
       }
 
-      &:hover:after,
-      &:focus:after {
-        width: 100%;
+      &:hover {
+        opacity: 1;
+        text-shadow: 0 0 .6px $black, 0 0 .6px $black;
+
+        &:after {
+          width: 100%;
+        }
       }
     }
   }
@@ -149,7 +160,7 @@
           margin-bottom: 0;
         }
 
-        &:active, &:focus, &:hover {
+        &:active, &:focus, &:hover, &.active {
           opacity: 1;
 
           .header-nav__link {
@@ -166,7 +177,7 @@
         color: $white;
         display: block;
 
-        &:active, &:focus, &:hover {
+        &:active, &:focus, &:hover, &.active {
           color: $white;
           text-shadow: 0 0 .6px $white, 0 0 .6px $white;
         }
