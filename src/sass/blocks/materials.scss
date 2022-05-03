@@ -160,6 +160,26 @@
   .main-materials {
     padding-top: 30.6rem;
 
+    &__circle {
+      &_left {
+        display: none;
+      }
+
+      &_right {
+        right: auto;
+        left: 53.3rem;
+        top: -30.6rem;
+        width: 85.3rem;
+        height: 85.3rem;
+
+        &_purple {
+          right: auto;
+          left: 87.1rem;
+          top: 34.0rem;
+        }
+      }
+    }
+
     &-text {
       padding: 0;
       max-width: 57.6rem;
@@ -207,6 +227,17 @@
     padding-top: 7.2rem;
     padding-bottom: 14.8rem;
 
+    &__circle {
+      left: -45.3rem;
+      top: auto;
+      bottom: 0;
+
+      &_purple {
+        right: -57rem;
+        top: 37.5rem;
+      }
+    }
+
     &-video {
       &__list {
         display: grid;
@@ -223,10 +254,20 @@
       }
     }
   }
+
 }
 
 @media only screen and (max-width: $small-tablet) {
   .main-materials {
+
+    &__circle {
+      &_right {
+        &_purple {
+          left: 59.1rem;
+        }
+      }
+    }
+
     &-text {
       padding: 0;
       max-width: 40.7rem;
@@ -261,6 +302,17 @@
     padding-top: 7.3rem;
     padding-bottom: 11rem;
 
+    &__circle {
+      left: -34.3rem;
+      top: auto;
+      bottom: -25.8rem;
+
+      &_purple {
+        right: -57rem;
+        top: 37.6rem;
+      }
+    }
+
     &-video {
       &__list {
         margin: -1.1rem;
@@ -280,6 +332,25 @@
 @media only screen and (max-width: $small-mobile) {
   .main-materials {
     padding-top: 6.5rem;
+
+    &__circle {
+      &_left {
+        top: 250.6rem;
+        left: auto;
+        right: -57.1rem;
+
+        &_purple {
+          display: none;
+        }
+      }
+
+      &_right {
+        &_purple {
+          left: 33.1rem;
+          top: 34.0rem;
+        }
+      }
+    }
 
     &-text {
       padding: 0;
@@ -333,8 +404,18 @@
     padding-top: 8.6rem;
     padding-bottom: 5.8rem;
 
+    &__circle {
+      bottom: 34.8rem;
+
+      &_purple {
+        right: -62.6rem;
+        top: 39.5rem;
+      }
+    }
+
     &-accordion {
       border: none;
+
       &__list {
         margin-top: 2.9rem;
       }
@@ -357,6 +438,7 @@
         height: 1.7rem;
         width: 1.1rem;
       }
+
       &__body {
         padding-top: 1.2rem;
         padding-bottom: 4.7rem;
@@ -372,6 +454,7 @@
       &__item {
         padding: 0;
         margin-bottom: 3.8rem;
+
         &:last-child {
           margin-bottom: 0;
         }
@@ -387,6 +470,31 @@
 @media only screen and (max-width: $tiny-mobile) {
   .main-materials {
     padding-top: 5rem;
+
+    &__circle {
+      &_left {
+        top: 123.6rem;
+        left: auto;
+        right: -42.7rem;
+        width: 63.8rem;
+        height: 63.8rem;
+      }
+
+      &_right {
+        width: 63.8rem;
+        height: 63.8rem;
+        left: 18.9rem;
+        top: -22.9rem;
+
+        &_purple {
+          width: 39.5rem;
+          height: 39.5rem;
+          left: 24.7rem;
+          top: 25.4rem;
+
+        }
+      }
+    }
 
     &-text {
       margin-top: 2.4rem;
@@ -422,6 +530,19 @@
     padding-top: 8.4rem;
     padding-bottom: 5.1rem;
 
+    &__circle {
+      bottom: 31.2rem;
+      left: -25.6rem;
+      width: 40rem;
+      height: 40rem;
+      &_purple {
+        width: 63.8rem;
+        height: 63.8rem;
+        right: -46.8rem;
+        top: 28.6rem;
+      }
+    }
+
     &-accordion {
       &__list {
         margin-top: 2.7rem;
@@ -445,6 +566,7 @@
         height: 1.2rem;
         width: .8rem;
       }
+
       &__body {
         padding-top: 1.8rem;
         padding-bottom: 4rem;

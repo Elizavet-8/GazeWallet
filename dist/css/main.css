@@ -641,6 +641,20 @@ input {
     margin-left: 1.4rem;
   }
 
+  label {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 0.7rem;
+  }
+  label:after {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+  }
+
+  input {
+    height: 4.1rem;
+  }
+
   h1 {
     font-size: 2.4rem;
     line-height: 3.1rem;
@@ -2121,6 +2135,21 @@ input {
   .main-materials {
     padding-top: 30.6rem;
   }
+  .main-materials__circle_left {
+    display: none;
+  }
+  .main-materials__circle_right {
+    right: auto;
+    left: 53.3rem;
+    top: -30.6rem;
+    width: 85.3rem;
+    height: 85.3rem;
+  }
+  .main-materials__circle_right_purple {
+    right: auto;
+    left: 87.1rem;
+    top: 34rem;
+  }
   .main-materials-text {
     padding: 0;
     max-width: 57.6rem;
@@ -2160,6 +2189,15 @@ input {
     padding-top: 7.2rem;
     padding-bottom: 14.8rem;
   }
+  .materials__circle {
+    left: -45.3rem;
+    top: auto;
+    bottom: 0;
+  }
+  .materials__circle_purple {
+    right: -57rem;
+    top: 37.5rem;
+  }
   .materials-video__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2173,6 +2211,9 @@ input {
   }
 }
 @media only screen and (max-width: 744px) {
+  .main-materials__circle_right_purple {
+    left: 59.1rem;
+  }
   .main-materials-text {
     padding: 0;
     max-width: 40.7rem;
@@ -2201,6 +2242,15 @@ input {
     padding-top: 7.3rem;
     padding-bottom: 11rem;
   }
+  .materials__circle {
+    left: -34.3rem;
+    top: auto;
+    bottom: -25.8rem;
+  }
+  .materials__circle_purple {
+    right: -57rem;
+    top: 37.6rem;
+  }
   .materials-video__list {
     margin: -1.1rem;
   }
@@ -2214,6 +2264,18 @@ input {
 @media only screen and (max-width: 428px) {
   .main-materials {
     padding-top: 6.5rem;
+  }
+  .main-materials__circle_left {
+    top: 250.6rem;
+    left: auto;
+    right: -57.1rem;
+  }
+  .main-materials__circle_left_purple {
+    display: none;
+  }
+  .main-materials__circle_right_purple {
+    left: 33.1rem;
+    top: 34rem;
   }
   .main-materials-text {
     padding: 0;
@@ -2259,6 +2321,13 @@ input {
     padding-top: 8.6rem;
     padding-bottom: 5.8rem;
   }
+  .materials__circle {
+    bottom: 34.8rem;
+  }
+  .materials__circle_purple {
+    right: -62.6rem;
+    top: 39.5rem;
+  }
   .materials-accordion {
     border: none;
   }
@@ -2303,6 +2372,25 @@ input {
   .main-materials {
     padding-top: 5rem;
   }
+  .main-materials__circle_left {
+    top: 123.6rem;
+    left: auto;
+    right: -42.7rem;
+    width: 63.8rem;
+    height: 63.8rem;
+  }
+  .main-materials__circle_right {
+    width: 63.8rem;
+    height: 63.8rem;
+    left: 18.9rem;
+    top: -22.9rem;
+  }
+  .main-materials__circle_right_purple {
+    width: 39.5rem;
+    height: 39.5rem;
+    left: 24.7rem;
+    top: 25.4rem;
+  }
   .main-materials-text {
     margin-top: 2.4rem;
   }
@@ -2330,6 +2418,18 @@ input {
   .materials {
     padding-top: 8.4rem;
     padding-bottom: 5.1rem;
+  }
+  .materials__circle {
+    bottom: 31.2rem;
+    left: -25.6rem;
+    width: 40rem;
+    height: 40rem;
+  }
+  .materials__circle_purple {
+    width: 63.8rem;
+    height: 63.8rem;
+    right: -46.8rem;
+    top: 28.6rem;
   }
   .materials-accordion__list {
     margin-top: 2.7rem;
@@ -2408,6 +2508,7 @@ input {
 }
 .main-franchise-ads__img {
   position: absolute;
+  z-index: 3;
   right: -3.5rem;
   top: 20.4rem;
   width: 70.5rem;
@@ -2433,6 +2534,7 @@ input {
   position: absolute;
   top: 53.7rem;
   right: 5.5rem;
+  z-index: 4;
 }
 .main-franchise-ads__title {
   font-weight: 700;
@@ -2559,6 +2661,7 @@ input {
   bottom: -8.9rem;
   width: 71.1rem;
   height: 75.1rem;
+  z-index: 3;
 }
 
 .universality {
@@ -2578,24 +2681,26 @@ input {
   opacity: 0.2;
 }
 .universality__grid {
-  display: grid;
-  grid-template-columns: 24.5rem 38.5rem 19.1rem 24.4rem 30.6rem;
   margin-top: 3.9rem;
   margin-bottom: 7.2rem;
+  position: relative;
+  z-index: 5;
+  height: 67.2rem;
 }
 .universality-card {
-  height: 100%;
-  width: 100%;
   padding: 2rem 1.6rem;
   border-radius: 1.3rem;
   transition: transform 0.25s ease, background 0.25s ease, max-height 0.25s ease-out;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   overflow: hidden;
+  position: absolute;
 }
 .universality-card:after {
   content: "";
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   top: 0;
   left: 0;
   width: 100%;
@@ -2619,6 +2724,8 @@ input {
   left: 0;
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .universality-card__subtitle {
   color: #FFFFFF;
@@ -2627,6 +2734,105 @@ input {
   max-height: 0;
   transform: translateY(50%);
   transition: all 0.25s ease-out;
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+}
+.universality-card:nth-child(1) {
+  width: 19.1rem;
+  height: 26.7rem;
+  top: 7.2rem;
+  left: 5.2rem;
+}
+.universality-card:nth-child(2) {
+  width: 28.5rem;
+  height: 19.3rem;
+  top: 0;
+  left: 25.4rem;
+}
+.universality-card:nth-child(3) {
+  width: 19.1rem;
+  height: 26.7rem;
+  top: 3.9rem;
+  left: 54.8rem;
+}
+.universality-card:nth-child(4) {
+  width: 19rem;
+  height: 19.1rem;
+  top: 6.2rem;
+  left: 74.9rem;
+}
+.universality-card:nth-child(5) {
+  width: 17.7rem;
+  height: 12.8rem;
+  top: 12.5rem;
+  left: 95rem;
+}
+.universality-card:nth-child(6) {
+  width: 17.2rem;
+  height: 19.1rem;
+  top: 6.2rem;
+  left: 113.7rem;
+}
+.universality-card:nth-child(7) {
+  width: 24.5rem;
+  height: 12.8rem;
+  top: 35rem;
+  left: 0;
+}
+.universality-card:nth-child(8) {
+  width: 28.5rem;
+  height: 25.4rem;
+  top: 20.1rem;
+  left: 25.4rem;
+}
+.universality-card:nth-child(9) {
+  width: 19.1rem;
+  height: 10rem;
+  top: 31.5rem;
+  left: 54.8rem;
+}
+.universality-card:nth-child(10) {
+  width: 24.5rem;
+  height: 12.8rem;
+  top: 26.2rem;
+  left: 74.9rem;
+}
+.universality-card:nth-child(11) {
+  width: 30.6rem;
+  height: 26.7rem;
+  top: 26.2rem;
+  left: 100.3rem;
+}
+.universality-card:nth-child(12) {
+  width: 13.3rem;
+  height: 19.3rem;
+  top: 46.3rem;
+  left: 25.4rem;
+}
+.universality-card:nth-child(13) {
+  width: 14.1rem;
+  height: 12.9rem;
+  top: 46.3rem;
+  left: 39.7rem;
+}
+.universality-card:nth-child(14) {
+  width: 19.1rem;
+  height: 19.1rem;
+  top: 42.5rem;
+  left: 54.8rem;
+}
+.universality-card:nth-child(15) {
+  width: 24.4rem;
+  height: 27.4rem;
+  top: 39.9rem;
+  left: 74.9rem;
+}
+.universality-card:nth-child(16) {
+  width: 14.1rem;
+  height: 13.3rem;
+  top: 53.9rem;
+  left: 100.3rem;
 }
 .universality__title_small {
   margin-bottom: 7.1rem;
@@ -2686,6 +2892,9 @@ input {
   max-width: 28.6rem;
 }
 
+.benefits__circle {
+  display: none;
+}
 .benefits__title {
   margin-bottom: 18.1rem;
 }
@@ -2723,6 +2932,9 @@ input {
   padding-top: 22.1rem;
   padding-bottom: 15.1rem;
 }
+.result__circle {
+  display: none;
+}
 .result__title {
   text-align: right;
   max-width: 49.1rem;
@@ -2736,7 +2948,7 @@ input {
 }
 .result__column {
   padding: 1rem 1.45rem;
-  width: 50%;
+  width: auto;
 }
 .result__column:nth-child(1) {
   width: 53.3rem;
@@ -2754,7 +2966,7 @@ input {
   width: 37.55rem;
 }
 .result__column:nth-child(5) {
-  width: 54.3rem;
+  width: 54rem;
 }
 .result__column:nth-child(5) .result__text {
   max-width: 24.4rem;
@@ -2791,6 +3003,9 @@ input {
   max-width: 25.7rem;
 }
 
+.income__circle {
+  display: none;
+}
 .income__title {
   margin-bottom: 12.5rem;
 }
@@ -2903,12 +3118,19 @@ input {
 }
 
 @media only screen and (max-width: 1024px) {
-  .circle {
-    display: none;
-  }
-
   .main-franchise {
     margin-top: 30.9rem;
+  }
+  .main-franchise__circle_left {
+    left: 53.3rem;
+    top: -30.6rem;
+  }
+  .main-franchise__circle_left_purple {
+    left: 87.1rem;
+    top: 34rem;
+  }
+  .main-franchise__circle_right {
+    display: none;
   }
   .main-franchise-text__caption {
     margin-top: 2.7rem;
@@ -2930,6 +3152,10 @@ input {
     padding-top: 9.8rem;
     padding-bottom: 10.5rem;
   }
+  .business-franchise__circle {
+    right: -57rem;
+    top: 37.3rem;
+  }
   .business-franchise__caption {
     margin-top: 2.1rem;
     margin-bottom: 4.3rem;
@@ -2950,9 +3176,22 @@ input {
     padding: 2.65rem;
   }
 
+  .franchise-partners__circle {
+    left: -45.3rem;
+    top: -22.6rem;
+  }
+
   .opportunities {
     padding-top: 10.6rem;
     padding-bottom: 24.9rem;
+  }
+  .opportunities__circle {
+    right: -51.5rem;
+    top: 13rem;
+  }
+  .opportunities__circle_purple {
+    right: -42.8rem;
+    top: 77.6rem;
   }
   .opportunities__title {
     margin-bottom: 7.9rem;
@@ -2975,6 +3214,14 @@ input {
     bottom: -8.2rem;
   }
 
+  .universality__circle {
+    right: -46.8rem;
+    top: 85.9rem;
+  }
+  .universality__circle_purple {
+    left: -63.9rem;
+    top: 19.9rem;
+  }
   .universality__title {
     text-align: right;
     max-width: 55.3rem;
@@ -2983,6 +3230,101 @@ input {
   .universality__grid {
     margin-top: 7.6rem;
     margin-bottom: 8rem;
+    height: 47.4rem;
+  }
+  .universality-card:nth-child(1) {
+    width: 13.5rem;
+    height: 18.9rem;
+    top: 5.1rem;
+    left: 3.8rem;
+  }
+  .universality-card:nth-child(2) {
+    width: 20.1rem;
+    height: 13.6rem;
+    left: 18rem;
+  }
+  .universality-card:nth-child(3) {
+    width: 13.5rem;
+    height: 18.9rem;
+    top: 2.8rem;
+    left: 38.7rem;
+  }
+  .universality-card:nth-child(4) {
+    width: 13.4rem;
+    height: 13.5rem;
+    top: 4.4rem;
+    left: 52.9rem;
+  }
+  .universality-card:nth-child(5) {
+    width: 12.5rem;
+    height: 9rem;
+    top: 8.8rem;
+    left: 67rem;
+  }
+  .universality-card:nth-child(6) {
+    width: 12.1rem;
+    height: 13.5rem;
+    top: 4.4rem;
+    left: 80.3rem;
+  }
+  .universality-card:nth-child(7) {
+    width: 17.6rem;
+    height: 9rem;
+    top: 24.6rem;
+  }
+  .universality-card:nth-child(8) {
+    width: 20.1rem;
+    height: 17.9rem;
+    top: 14.2rem;
+    left: 18rem;
+  }
+  .universality-card:nth-child(9) {
+    width: 13.5rem;
+    height: 7.1rem;
+    top: 22.3rem;
+    left: 38.7rem;
+  }
+  .universality-card:nth-child(10) {
+    width: 17.3rem;
+    height: 9rem;
+    top: 18.3rem;
+    left: 52.9rem;
+  }
+  .universality-card:nth-child(11) {
+    width: 21.6rem;
+    height: 18.9rem;
+    top: 18.3rem;
+    left: 70.8rem;
+  }
+  .universality-card:nth-child(12) {
+    width: 9.4rem;
+    height: 13.6rem;
+    top: 32.6rem;
+    left: 18rem;
+  }
+  .universality-card:nth-child(13) {
+    width: 10rem;
+    height: 9.1rem;
+    top: 32.6rem;
+    left: 28.1rem;
+  }
+  .universality-card:nth-child(14) {
+    width: 13.5rem;
+    height: 13.5rem;
+    top: 30rem;
+    left: 38.7rem;
+  }
+  .universality-card:nth-child(15) {
+    width: 17.2rem;
+    height: 19.3rem;
+    top: 28.1rem;
+    left: 52.9rem;
+  }
+  .universality-card:nth-child(16) {
+    width: 10rem;
+    height: 9.4rem;
+    top: 38rem;
+    left: 70.8rem;
   }
   .universality__row {
     display: grid;
@@ -3012,6 +3354,24 @@ input {
     margin-top: 6.2rem;
   }
 
+  .benefits {
+    position: relative;
+  }
+  .benefits__circle {
+    display: block;
+    width: 85.3rem;
+    height: 85.3rem;
+    right: -65.4rem;
+    top: 81.6rem;
+    opacity: 0.1;
+  }
+  .benefits__circle_purple {
+    width: 52.8rem;
+    height: 52.8rem;
+    left: 95.5rem;
+    top: -7.8rem;
+    opacity: 0.3;
+  }
   .benefits__title {
     margin-bottom: 7.2rem;
   }
@@ -3036,6 +3396,15 @@ input {
   .result {
     padding-top: 9.5rem;
     padding-bottom: 10.7rem;
+    position: relative;
+  }
+  .result__circle {
+    display: block;
+    width: 53.5rem;
+    height: 53.5rem;
+    opacity: 0.15;
+    left: -36.9rem;
+    top: 42.4rem;
   }
   .result__grid {
     margin: -1.5rem;
@@ -3044,7 +3413,7 @@ input {
     padding: 1.5rem;
   }
   .result__column:nth-child(1) {
-    width: 51.4rem;
+    width: 51rem;
   }
   .result__column:nth-child(2) {
     width: 44rem;
@@ -3065,6 +3434,24 @@ input {
     width: 43.9rem;
   }
 
+  .income {
+    position: relative;
+  }
+  .income__circle {
+    display: block;
+    width: 85.3rem;
+    height: 85.3rem;
+    opacity: 0.1;
+    right: -59.9rem;
+    top: -35.4rem;
+  }
+  .income__circle_purple {
+    width: 85.3rem;
+    height: 85.3rem;
+    left: -55.5rem;
+    bottom: -8.8rem;
+    opacity: 0.2;
+  }
   .income__title {
     margin-bottom: 12.7rem;
   }
@@ -3073,9 +3460,18 @@ input {
     flex-wrap: wrap;
     justify-content: center;
     margin: -1.55rem -2.45rem;
+    position: relative;
+    z-index: 3;
   }
   .income__column {
     padding: 1.55rem 2.45rem;
+  }
+  .income__card {
+    background-image: url("../images/income-card.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
   }
   .income__link {
     display: none;
@@ -3099,6 +3495,9 @@ input {
   .unique-offer__text {
     margin-top: 3.7rem;
     margin-bottom: 4.1rem;
+  }
+  .unique-offer__img {
+    margin: 0;
   }
   .unique-offer__btn {
     margin: auto;
@@ -3133,6 +3532,9 @@ input {
   .main-franchise {
     margin-top: 28.9rem;
   }
+  .main-franchise__circle_left_purple {
+    left: 59.1rem;
+  }
   .main-franchise-text__title {
     max-width: 33rem;
   }
@@ -3142,6 +3544,7 @@ input {
     max-width: 32rem;
   }
   .main-franchise-text__link {
+    display: block;
     margin-top: 26.9rem;
   }
   .main-franchise-ads__img {
@@ -3174,6 +3577,10 @@ input {
     max-width: 19rem;
   }
 
+  .franchise-partners__circle {
+    left: -34.3rem;
+    top: -28.1rem;
+  }
   .franchise-partners__tilte {
     font-size: 3.4rem;
     line-height: 4.4rem;
@@ -3183,6 +3590,13 @@ input {
   .opportunities {
     padding-top: 11rem;
     padding-bottom: 3.8rem;
+  }
+  .opportunities__circle {
+    top: -1.2rem;
+  }
+  .opportunities__circle_purple {
+    right: -35.8rem;
+    top: 60.3rem;
   }
   .opportunities__title {
     margin-bottom: 5.5rem;
@@ -3221,6 +3635,13 @@ input {
     margin-bottom: 6rem;
   }
 
+  .universality__circle {
+    top: 11rem;
+  }
+  .universality__circle_purple {
+    left: -52.9rem;
+    top: -54.9rem;
+  }
   .universality__title {
     max-width: 39.9rem;
   }
@@ -3228,8 +3649,103 @@ input {
     margin-bottom: 5.8rem;
   }
   .universality__grid {
-    margin-top: 6.5rem;
-    margin-bottom: 8.2rem;
+    margin: 6.5rem -5rem 8.2rem;
+    height: 41.3rem;
+  }
+  .universality-card:nth-child(1) {
+    width: 11.7rem;
+    height: 16.4rem;
+    top: 4.4rem;
+    left: -0.8rem;
+  }
+  .universality-card:nth-child(2) {
+    width: 17.5rem;
+    height: 11.9rem;
+    left: 11.3rem;
+  }
+  .universality-card:nth-child(3) {
+    width: 11.7rem;
+    height: 16.4rem;
+    top: 2.4rem;
+    left: 29.5rem;
+  }
+  .universality-card:nth-child(4) {
+    width: 11.7rem;
+    height: 11.7rem;
+    top: 3.8rem;
+    left: 41.7rem;
+  }
+  .universality-card:nth-child(5) {
+    width: 10.9rem;
+    height: 7.9rem;
+    top: 7.7rem;
+    left: 54.1rem;
+  }
+  .universality-card:nth-child(6) {
+    width: 10.6rem;
+    height: 11.7rem;
+    top: 3.9rem;
+    left: 65.6rem;
+  }
+  .universality-card:nth-child(7) {
+    width: 15rem;
+    height: 7.9rem;
+    top: 21.5rem;
+    left: -4.2rem;
+  }
+  .universality-card:nth-child(8) {
+    width: 17.5rem;
+    height: 15.6rem;
+    top: 12.4rem;
+    left: 11.3rem;
+  }
+  .universality-card:nth-child(9) {
+    width: 11.7rem;
+    height: 6.1rem;
+    top: 19.4rem;
+    left: 29.5rem;
+  }
+  .universality-card:nth-child(10) {
+    width: 15rem;
+    height: 7.9rem;
+    top: 16.1rem;
+    left: 41.7rem;
+  }
+  .universality-card:nth-child(11) {
+    width: 18.8rem;
+    height: 16.4rem;
+    top: 16.1rem;
+    left: 57.4rem;
+  }
+  .universality-card:nth-child(12) {
+    width: 8.2rem;
+    height: 11.9rem;
+    top: 28.5rem;
+    left: 11.3rem;
+  }
+  .universality-card:nth-child(13) {
+    width: 8.7rem;
+    height: 7.9rem;
+    top: 28.5rem;
+    left: 20.2rem;
+  }
+  .universality-card:nth-child(14) {
+    width: 11.7rem;
+    height: 11.7rem;
+    top: 26.1rem;
+    left: 29.5rem;
+  }
+  .universality-card:nth-child(15) {
+    width: 15rem;
+    height: 16.8rem;
+    top: 24.5rem;
+    left: 41.7rem;
+  }
+  .universality-card:nth-child(16) {
+    width: 8.7rem;
+    height: 8.2rem;
+    top: 33.2rem;
+    left: 57.4rem;
   }
   .universality__row {
     display: flex;
@@ -3284,6 +3800,9 @@ input {
     margin-top: 6.3rem;
   }
 
+  .benefits__circle {
+    display: none;
+  }
   .benefits__title {
     margin-bottom: 6.4rem;
   }
@@ -3309,6 +3828,9 @@ input {
     padding-top: 10.5rem;
     padding-bottom: 6.7rem;
   }
+  .result__circle {
+    display: none;
+  }
   .result__title {
     max-width: 34.4rem;
     margin-bottom: 5.6rem;
@@ -3320,27 +3842,27 @@ input {
     padding: 1.5rem 1rem;
   }
   .result__column:nth-child(1) {
-    width: 36.5rem;
+    max-width: 36.5rem;
   }
   .result__column:nth-child(2) {
-    width: 29.9rem;
+    max-width: 29.9rem;
   }
   .result__column:nth-child(3) {
-    width: 29.5rem;
+    max-width: 29.5rem;
   }
   .result__column:nth-child(4) {
-    width: 36.9rem;
+    max-width: 36.9rem;
   }
   .result__column:nth-child(5) {
-    width: 36.3rem;
+    max-width: 36.3rem;
   }
   .result__column:nth-child(6) {
-    width: 30rem;
-  }
-  .result__card {
-    height: 31rem;
+    max-width: 30rem;
   }
 
+  .income__circle {
+    display: none;
+  }
   .income__title {
     margin-bottom: 6.7rem;
   }
@@ -3357,13 +3879,6 @@ input {
   }
   .income__column:last-child {
     margin-bottom: 0;
-  }
-  .income__card {
-    background-image: url("../images/income-card.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: #FFFFFF;
   }
   .income__btn {
     margin-top: 7.6rem;
@@ -3403,6 +3918,792 @@ input {
   }
   .questions-form__btn {
     margin-top: 1.7rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .result {
+    padding-top: 5.2rem;
+    padding-bottom: 5.8rem;
+  }
+  .result__title {
+    max-width: 35rem;
+    margin-bottom: 4.2rem;
+  }
+  .result__grid {
+    margin: 0;
+    justify-content: center;
+  }
+  .result__column {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  .result__column:nth-child(1), .result__column:nth-child(2), .result__column:nth-child(3), .result__column:nth-child(4), .result__column:nth-child(5), .result__column:nth-child(6) {
+    width: 39.8rem;
+    max-width: 100%;
+  }
+  .result__column:last-child {
+    margin-bottom: 0;
+  }
+  .result__card {
+    background-image: url("../images/result-card.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 428px) {
+  .main-franchise {
+    margin-top: 7.9rem;
+  }
+  .main-franchise__circle_left {
+    left: 25.3rem;
+  }
+  .main-franchise__circle_left_purple {
+    left: 33.1rem;
+  }
+  .main-franchise__btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main-franchise-text {
+    margin-top: 3px;
+  }
+  .main-franchise-text__title {
+    max-width: 27.6rem;
+  }
+  .main-franchise-text__caption {
+    margin-bottom: 2.7rem;
+  }
+  .main-franchise-text__link {
+    display: none;
+  }
+  .main-franchise-ads__img {
+    width: 50.8rem;
+    height: 54.2rem;
+    max-width: none;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: -5.5rem;
+    margin-left: -5.6rem;
+  }
+  .main-franchise-ads__block {
+    top: 28.7rem;
+    right: 1.5rem;
+    width: 24rem;
+    min-height: 10.5rem;
+  }
+  .main-franchise-ads__title {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+
+  .business-franchise {
+    padding-top: 7rem;
+    padding-bottom: 4.2rem;
+  }
+  .business-franchise__circle {
+    right: -62.6rem;
+    top: 37.6rem;
+  }
+  .business-franchise__title {
+    max-width: 29rem;
+  }
+  .business-franchise__caption {
+    max-width: 30.6rem;
+    margin-top: 1.9rem;
+    margin-bottom: 2.6rem;
+  }
+  .business-franchise-text {
+    margin-top: 5.6rem;
+  }
+  .business-franchise-text__title {
+    margin-bottom: 5rem;
+  }
+  .business-franchise-text__grid {
+    margin: -2.15rem -1.5rem;
+  }
+  .business-franchise-text__column {
+    padding: 2.15rem 1.5rem;
+  }
+  .business-franchise-text__subtitle {
+    margin-top: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  .business-franchise-text__text {
+    max-width: 100%;
+  }
+
+  .franchise-partners__circle {
+    top: 0.9rem;
+    opacity: 0.15;
+  }
+  .franchise-partners__tilte {
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25rem;
+  }
+
+  .opportunities {
+    padding-top: 6.3rem;
+    padding-bottom: 5.9rem;
+  }
+  .opportunities__circle {
+    top: 26.3rem;
+    right: -57.1rem;
+    left: auto;
+    opacity: 0.1;
+  }
+  .opportunities__circle_purple {
+    right: -41.4rem;
+    top: 100.3rem;
+    opacity: 0.2;
+  }
+  .opportunities__title {
+    margin-bottom: 3.2rem;
+    text-align: center;
+  }
+  .opportunities__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .opportunities__item {
+    padding: 0;
+    margin-bottom: 2.7rem;
+    text-align: center;
+  }
+  .opportunities__item:last-child {
+    margin-bottom: 0;
+  }
+  .opportunities__subtitle {
+    justify-content: center;
+  }
+  .opportunities__img {
+    width: 48.7rem;
+    height: 51.4rem;
+    max-width: none;
+    margin-left: -15.5rem;
+    margin-bottom: 5rem;
+  }
+
+  .universality__circle {
+    display: none;
+  }
+  .universality__circle_purple {
+    display: block;
+    top: -21.2rem;
+  }
+  .universality__title {
+    max-width: 27.4rem;
+  }
+  .universality__title_small {
+    margin-bottom: 5.1rem;
+  }
+  .universality__grid {
+    margin: 3.8rem -1.4rem 7.9rem;
+    height: 23.9rem;
+  }
+  .universality-card {
+    border-radius: 5px;
+  }
+  .universality-card:nth-child(1) {
+    width: 6.8rem;
+    height: 9.5rem;
+    top: 2.6rem;
+    left: -0.7rem;
+  }
+  .universality-card:nth-child(2) {
+    width: 10.1rem;
+    height: 6.9rem;
+    left: 6.5rem;
+  }
+  .universality-card:nth-child(3) {
+    width: 6.8rem;
+    height: 9.5rem;
+    top: 1.4rem;
+    left: 16.9rem;
+  }
+  .universality-card:nth-child(4) {
+    width: 6.8rem;
+    height: 6.8rem;
+    top: 2.2rem;
+    left: 24.1rem;
+  }
+  .universality-card:nth-child(5) {
+    width: 6.3rem;
+    height: 4.5rem;
+    top: 4.5rem;
+    left: 31.2rem;
+  }
+  .universality-card:nth-child(6) {
+    width: 6.1rem;
+    height: 6.8rem;
+    top: 2.2rem;
+    left: 37.9rem;
+  }
+  .universality-card:nth-child(7) {
+    width: 8.7rem;
+    height: 4.6rem;
+    top: 12.5rem;
+    left: -2.6rem;
+  }
+  .universality-card:nth-child(8) {
+    width: 10.1rem;
+    height: 9rem;
+    top: 7.2rem;
+    left: 6.5rem;
+  }
+  .universality-card:nth-child(9) {
+    width: 6.8rem;
+    height: 3.6rem;
+    top: 11.2rem;
+    left: 16.9rem;
+  }
+  .universality-card:nth-child(10) {
+    width: 8.7rem;
+    height: 4.6rem;
+    top: 9.3rem;
+    left: 24rem;
+  }
+  .universality-card:nth-child(11) {
+    width: 10.9rem;
+    height: 9.5rem;
+    top: 9.3rem;
+    left: 33.1rem;
+  }
+  .universality-card:nth-child(12) {
+    width: 4.7rem;
+    height: 6.9rem;
+    top: 16.5rem;
+    left: 6.5rem;
+  }
+  .universality-card:nth-child(13) {
+    width: 5rem;
+    height: 4.6rem;
+    top: 16.5rem;
+    left: 11.6rem;
+  }
+  .universality-card:nth-child(14) {
+    width: 6.8rem;
+    height: 6.8rem;
+    top: 15.1rem;
+    left: 16.9rem;
+  }
+  .universality-card:nth-child(15) {
+    width: 8.7rem;
+    height: 9.7rem;
+    top: 14.2rem;
+    left: 24.1rem;
+  }
+  .universality-card:nth-child(16) {
+    width: 5rem;
+    height: 4.7rem;
+    top: 19.2rem;
+    left: 33.1rem;
+  }
+
+  .offers {
+    padding-top: 6rem;
+    padding-bottom: 6.3rem;
+  }
+  .offers__block {
+    padding: 5.7rem 3rem;
+  }
+  .offers__title {
+    margin-bottom: 3.8rem;
+  }
+
+  .benefits__title {
+    margin-bottom: 3.9rem;
+  }
+  .benefits__img {
+    margin-bottom: 6.7rem;
+    margin-left: -3.5rem;
+    max-width: none;
+    width: 47.1rem;
+    height: 28.5rem;
+  }
+  .benefits__list {
+    margin: 0;
+    max-width: 35.8rem;
+  }
+  .benefits__item {
+    margin-bottom: 1.9rem;
+  }
+
+  .result__title {
+    max-width: 26rem;
+  }
+
+  .income__title {
+    margin-bottom: 5.7rem;
+  }
+  .income__column {
+    width: 100%;
+  }
+  .income__btn {
+    margin-top: 6.4rem;
+  }
+
+  .unique-offer {
+    padding-top: 6.2rem;
+    padding-bottom: 6.1rem;
+  }
+  .unique-offer__block {
+    padding: 6.8rem 4.2rem;
+  }
+  .unique-offer__text {
+    margin-top: 3.9rem;
+    margin-bottom: 4.3rem;
+  }
+  .unique-offer__img {
+    width: 22.9rem;
+    height: 6rem;
+  }
+
+  .questions {
+    padding-bottom: 8.6rem;
+  }
+  .questions__caption {
+    max-width: 32.9rem;
+    margin: 2.1rem auto 4.1rem;
+  }
+  .questions-form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  .questions-form__group {
+    padding: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  .questions-form__group:last-child {
+    margin-bottom: 0;
+  }
+  .questions-form__btn {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .main-franchise {
+    margin-top: 5.9rem;
+  }
+  .main-franchise__circle_left {
+    width: 63.8rem;
+    height: 63.8rem;
+    left: 18.9rem;
+    top: -22.9rem;
+  }
+  .main-franchise__circle_left_purple {
+    width: 39.5rem;
+    height: 39.5rem;
+    left: 24.7rem;
+    top: 25.4rem;
+  }
+  .main-franchise__btn {
+    height: 5.5rem;
+    max-width: 25.9rem;
+  }
+  .main-franchise-text {
+    margin-top: 2px;
+  }
+  .main-franchise-text__title {
+    max-width: 21rem;
+  }
+  .main-franchise-text__caption {
+    margin-top: 1.8rem;
+    margin-bottom: 2.3rem;
+  }
+  .main-franchise-ads__img {
+    width: 38rem;
+    height: 40.5rem;
+    margin-right: -4.1rem;
+    margin-left: -4.2rem;
+  }
+  .main-franchise-ads__block {
+    top: 21.4rem;
+    right: 1.2rem;
+    width: 18rem;
+    min-height: 7.9rem;
+  }
+  .main-franchise-ads__title {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+  .main-franchise-ads__text {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  .business-franchise {
+    padding-top: 3.6rem;
+    padding-bottom: 2.9rem;
+  }
+  .business-franchise__circle {
+    width: 63.8rem;
+    height: 63.8rem;
+    right: -46.8rem;
+    top: 25rem;
+  }
+  .business-franchise__title {
+    max-width: 22rem;
+  }
+  .business-franchise__caption {
+    max-width: 25.2rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1.9rem;
+  }
+  .business-franchise-text {
+    margin-top: 4.2rem;
+  }
+  .business-franchise-text__title {
+    margin-bottom: 3.8rem;
+  }
+  .business-franchise-text__grid {
+    margin: -0.65rem -1.3rem;
+  }
+  .business-franchise-text__column {
+    padding: 0.65rem 1.3rem;
+  }
+  .business-franchise-text__subtitle {
+    margin-top: 2.1rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  .business-franchise-text__icon {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+  .business-franchise-text__svg {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .franchise-partners__circle {
+    top: -0.9rem;
+    left: -25.6rem;
+    width: 40rem;
+    height: 40rem;
+  }
+  .franchise-partners__tilte {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin-bottom: 1.5rem;
+    max-width: 20rem;
+  }
+
+  .opportunities {
+    padding-top: 3.2rem;
+    padding-bottom: 4.5rem;
+  }
+  .opportunities__circle {
+    width: 63.8rem;
+    height: 63.8rem;
+    top: 25.2rem;
+    right: -42.6rem;
+  }
+  .opportunities__circle_purple {
+    width: 39.5rem;
+    height: 39.5rem;
+    top: 73.5rem;
+    right: -31rem;
+  }
+  .opportunities__title {
+    margin-bottom: 2.4rem;
+  }
+  .opportunities__item {
+    margin-bottom: 2rem;
+  }
+  .opportunities__img {
+    width: 36.4rem;
+    height: 38.4rem;
+    margin-left: -11.6rem;
+    margin-bottom: 3.4rem;
+  }
+  .opportunities__subtitle {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    margin-bottom: 0.7rem;
+  }
+  .opportunities__subtitle:before {
+    width: 0.7rem;
+    height: 0.7rem;
+    margin-right: 0.9rem;
+  }
+  .opportunities__text {
+    max-width: 19.5rem;
+  }
+
+  .universality__circle_purple {
+    width: 63.8rem;
+    height: 63.8rem;
+    top: -16.4rem;
+    left: -39.5rem;
+  }
+  .universality__title {
+    max-width: 20.5rem;
+  }
+  .universality__title_small {
+    margin-bottom: 4.8rem;
+  }
+  .universality__grid {
+    margin: 2.8rem -1.1rem 4.4rem;
+    height: 17.9rem;
+  }
+  .universality-card {
+    border-radius: 3px;
+  }
+  .universality-card:nth-child(1) {
+    width: 5.1rem;
+    height: 7.1rem;
+    left: -0.5rem;
+    top: 1.9rem;
+  }
+  .universality-card:nth-child(2) {
+    width: 7.6rem;
+    height: 5.1rem;
+    left: 4.8rem;
+  }
+  .universality-card:nth-child(3) {
+    width: 5rem;
+    height: 7.1rem;
+    left: 12.7rem;
+    top: 1.1rem;
+  }
+  .universality-card:nth-child(4) {
+    width: 5rem;
+    height: 5.1rem;
+    left: 18rem;
+    top: 1.8rem;
+  }
+  .universality-card:nth-child(5) {
+    width: 4.7rem;
+    height: 3.4rem;
+    left: 23.3rem;
+    top: 2.8rem;
+  }
+  .universality-card:nth-child(6) {
+    width: 4.6rem;
+    height: 5.1rem;
+    left: 28.3rem;
+    top: 1.7rem;
+  }
+  .universality-card:nth-child(7) {
+    width: 6.5rem;
+    height: 3.4rem;
+    left: -1.9rem;
+    top: 9.3rem;
+  }
+  .universality-card:nth-child(8) {
+    width: 7.6rem;
+    height: 6.7rem;
+    left: 4.8rem;
+    top: 5.4rem;
+  }
+  .universality-card:nth-child(9) {
+    width: 5rem;
+    height: 2.7rem;
+    left: 12.7rem;
+    top: 8.5rem;
+  }
+  .universality-card:nth-child(10) {
+    width: 6.5rem;
+    height: 3.4rem;
+    left: 18rem;
+    top: 7.15rem;
+  }
+  .universality-card:nth-child(11) {
+    width: 8.1rem;
+    height: 6.9rem;
+    left: 24.8rem;
+    top: 7rem;
+  }
+  .universality-card:nth-child(12) {
+    width: 3.5rem;
+    height: 5.1rem;
+    left: 4.8rem;
+    top: 12.3rem;
+  }
+  .universality-card:nth-child(13) {
+    width: 3.8rem;
+    height: 3.1rem;
+    left: 8.6rem;
+    top: 12.3rem;
+  }
+  .universality-card:nth-child(14) {
+    width: 5rem;
+    height: 5.1rem;
+    left: 12.7rem;
+    top: 12.7rem;
+  }
+  .universality-card:nth-child(15) {
+    width: 6.5rem;
+    height: 7.3rem;
+    left: 18rem;
+    top: 11.33rem;
+  }
+  .universality-card:nth-child(16) {
+    width: 3.8rem;
+    height: 3.5rem;
+    left: 24.8rem;
+    top: 14.4rem;
+  }
+  .universality__column {
+    padding: 0;
+    margin-bottom: 3.3rem;
+    max-width: 24rem;
+  }
+  .universality__icon {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  .universality__svg {
+    width: 2.3rem;
+  }
+  .universality__subtitle {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .offers {
+    padding-top: 2.6rem;
+    padding-bottom: 4.7rem;
+  }
+  .offers__block {
+    padding: 4.3rem 2.2rem;
+    border-radius: 2.9rem;
+  }
+  .offers__title {
+    margin-bottom: 2.3rem;
+  }
+  .offers__subtitle {
+    font-size: 6.6rem;
+    line-height: 8.6rem;
+  }
+  .offers__item {
+    margin-bottom: 3.6rem;
+  }
+  .offers__text {
+    max-width: 16.9rem;
+  }
+  .offers__btn {
+    max-width: 21.4rem;
+    margin-top: 4.4rem;
+  }
+
+  .benefits__title {
+    margin-bottom: 2.9rem;
+  }
+  .benefits__img {
+    margin-bottom: 5.1rem;
+    margin-left: -2.8rem;
+    width: 35.2rem;
+    height: 21.3rem;
+  }
+  .benefits__list {
+    max-width: 100%;
+  }
+  .benefits__item {
+    margin-bottom: 1.6rem;
+    grid-template-columns: 2.7rem 1fr;
+  }
+  .benefits__svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .result {
+    padding-top: 3.5rem;
+    padding-bottom: 5.1rem;
+  }
+  .result__title {
+    max-width: 25.7rem;
+    font-size: 2.4rem;
+    line-height: 3.1rem;
+    margin-bottom: 3.8rem;
+  }
+  .result__column {
+    margin-bottom: 1.5rem;
+  }
+  .result__card {
+    border-radius: 2.1rem;
+    padding: 2.3rem;
+    min-height: 23.2rem;
+  }
+  .result__svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .result__text {
+    margin-top: 10.1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    max-width: 21.6rem;
+  }
+
+  .income__title {
+    margin-bottom: 4.3rem;
+  }
+  .income__btn {
+    margin-top: 4.6rem;
+  }
+  .income__column {
+    margin-bottom: 2.2rem;
+  }
+  .income__card {
+    padding: 4rem 2.4rem;
+    border-radius: 2rem;
+  }
+  .income__subtitle {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+  }
+  .income__list {
+    margin-top: 2.6rem;
+    margin-bottom: 2.8rem;
+  }
+  .income__item {
+    margin-bottom: 1.4rem;
+  }
+
+  .unique-offer {
+    padding-top: 4.8rem;
+    padding-bottom: 4.6rem;
+  }
+  .unique-offer__block {
+    padding: 5.1rem 3rem;
+    border-radius: 2.9rem;
+  }
+  .unique-offer__text {
+    margin: 3rem 0;
+  }
+  .unique-offer__img {
+    width: 17.1rem;
+    height: 4.5rem;
+  }
+
+  .questions {
+    padding-bottom: 6.2rem;
+  }
+  .questions__caption {
+    max-width: 25.7rem;
+    margin: 1.3rem auto 2.9rem;
+  }
+  .questions-form__group {
+    margin-bottom: 1.5rem;
   }
 }
 #regForm {
