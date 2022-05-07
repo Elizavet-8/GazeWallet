@@ -79,6 +79,7 @@ a {
 
 html {
   height: 100%;
+  overflow-y: auto;
 }
 
 body {
@@ -92,7 +93,9 @@ body {
   color: $black;
   background-image: url('../images/back.png');
   background-repeat: repeat;
+  overflow-y: auto;
   overflow-x: hidden;
+  position: relative;
 
   &.overflow {
     overflow: hidden;
