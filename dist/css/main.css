@@ -580,9 +580,19 @@ input {
   color: #B1B1B1;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1600px) {
   html {
     font-size: 0.625vw;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 0.6944444444vw;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 0.7320644217vw;
   }
 }
 @media only screen and (max-width: 1280px) {
@@ -847,7 +857,17 @@ input {
 .main-comment__block_left {
   top: 78.6rem;
   right: 44rem;
-  border-color: rgba(196, 196, 196, 0.06);
+  border-color: transparent;
+}
+.main-comment__block_left:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  background: linear-gradient(109.46deg, rgba(201, 201, 201, 0.48) 1.57%, rgba(196, 196, 196, 0.06) 100%);
 }
 .main-comment__block_right {
   top: 51rem;
@@ -860,6 +880,7 @@ input {
   font-size: 1.8rem;
   line-height: 2.3rem;
   margin-bottom: 1.1rem;
+  position: relative;
 }
 .main-comment__icon {
   width: 3rem;
@@ -868,6 +889,7 @@ input {
 }
 .main-comment__text {
   padding-left: 5px;
+  position: relative;
 }
 .main-comment__text p {
   margin-bottom: 0;
@@ -3142,12 +3164,15 @@ input {
 }
 .income__row {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(37.6rem, auto));
+  justify-content: space-between;
   grid-template-rows: repeat(auto-fill, minmax(51rem, 1fr));
-  margin: -4.55rem;
+  margin: -4.55rem 0;
 }
 .income__column {
-  padding: 4.55rem;
+  padding: 4.55rem 0;
+  width: 100%;
+  max-width: 37.6rem;
 }
 .income__card {
   height: 100%;

@@ -607,11 +607,25 @@ input {
 
 }
 
-@media only screen and (max-width: $large-desktop) {
+@media only screen and (max-width: 1600px) {
   html {
     font-size: 100vw / (1600/10);
   }
 }
+
+
+@media only screen and (max-width: $large-desktop) {
+  html {
+    font-size: 100vw / (1440/10);
+  }
+}
+
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 100vw / (1366/10);
+  }
+}
+
 
 @media only screen and (max-width: $small-desktop) {
   body {

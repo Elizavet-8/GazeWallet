@@ -677,13 +677,16 @@
 
   &__row {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3,minmax(37.6rem, auto));
+    justify-content: space-between;
     grid-template-rows: repeat(auto-fill, minmax(51rem, 1fr));
-    margin: -4.55rem;
+    margin: -4.55rem 0;
   }
 
   &__column {
-    padding: 4.55rem;
+    padding: 4.55rem 0;
+    width: 100%;
+    max-width: 37.6rem;
   }
 
   &__card {
