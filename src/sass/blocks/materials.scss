@@ -112,6 +112,7 @@
 
   &-accordion {
     &__svg {
+      transition: 0.3s;
       path {
         fill: $white;
       }
@@ -123,7 +124,7 @@
       padding-top: 0.8rem;
     }
 
-    &__item.active {
+    &__head.active {
       .materials-accordion {
         &__svg {
           transform: rotate(180deg);

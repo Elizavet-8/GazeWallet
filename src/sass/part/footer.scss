@@ -41,7 +41,12 @@
       margin-bottom: 0;
     }
   }
-
+  &__link {
+    color: $white;
+    &:hover,  &:active, &:focus {
+      color: $white;
+    }
+  }
   &__btn {
     margin-top: 3.2rem;
   }

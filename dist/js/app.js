@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $('body').removeClass('overflow');
   }); //плавный скролл
 
-  $("body").on("click", "a", function (event) {
+  $("body").on("click", "a[href^=\"#\"]", function (event) {
     event.preventDefault();
     var id = $(this).attr('href'),
         top = $(id).offset().top;
@@ -194,15 +194,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }); //аккардион
 
-  $(function () {
-    // (Optional) Active an item if it has the class "active"
-    $(".materials-accordion__item.active").children(".materials-accordion__body").slideDown();
-    $(".materials-accordion__item").click(function () {
-      // Cancel the siblings
-      $(this).siblings(".materials-accordion__item").removeClass("active").children(".materials-accordion__body").slideUp(); // Toggle the item
-
-      $(this).toggleClass("active").children(".materials-accordion__body").slideToggle("ease-out");
-    });
+  $(".materials-accordion__head.active").next(".materials-accordion__body").slideDown();
+  $('.materials-accordion').on('click', '.materials-accordion__head', function (e) {
+    e.preventDefault();
+    $(this).toggleClass("active").next('.materials-accordion__body').not(':animated').slideToggle();
   }); //видео
 
   function findVideos() {

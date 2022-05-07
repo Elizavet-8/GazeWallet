@@ -137,7 +137,7 @@
       z-index: 9;
       top: 0;
       left: 0;
-      min-height: 100vh;
+      min-height: 41.4rem;
       width: 100%;
       height: fit-content;
       padding: 13.3rem 2rem 7.7rem;
@@ -260,6 +260,7 @@
     }
 
     &-nav {
+      min-height: 52.7rem;
       &__item {
         margin-bottom: 3.3rem;
       }
@@ -277,12 +278,11 @@
     }
 
     &-nav {
-
+      min-height: 42.8rem;
+      padding-top: 11rem;
     }
 
     &.show {
-      padding-top: 6.5rem;
-
       .header {
         &-logo {
           width: 11.1rem;
@@ -304,7 +304,7 @@
 
     &-nav {
       padding-top: 14rem;
-
+      min-height: 52.2rem;
       &__link {
         font-size: 1.6rem;
         line-height: 2.1rem;

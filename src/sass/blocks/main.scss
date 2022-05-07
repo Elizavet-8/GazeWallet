@@ -127,6 +127,7 @@
       &_left {
         top: 78.6rem;
         right: 44rem;
+        border-color: rgba(196, 196, 196, 0.06);
       }
 
       &_right {
@@ -326,6 +327,38 @@
     padding: 3.55rem;
     position: relative;
     z-index: 1;
+    width: 100%;
+  }
+
+  &__card {
+    transition: 0.3s;
+    padding: 3.9rem 1.6rem 2.5rem 2rem;
+
+    &:hover, &:focus, &:active {
+      box-shadow: 0px 36px 47px -18px rgba(97, 202, 255, 0.25);
+      background-image: url('../images/marketing-card.png');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .marketing {
+        &__icon {
+          background: $white;
+        }
+
+        &__svg {
+          path {
+            fill: $blue;
+          }
+        }
+      }
+    }
+  }
+
+  &__svg {
+    path {
+      fill: $white;
+    }
   }
 
   &__text {
@@ -477,6 +510,7 @@
 @media only screen and (max-width: $large-tablet) {
   .main {
     padding-top: 25.5rem;
+
     &__circle {
       left: 53.3rem;
       top: -30.6rem;
@@ -895,7 +929,7 @@
 
   .customers {
     padding-top: 13.5rem;
-    padding-bottom: 35.8rem;
+    padding-bottom: 14.2rem;
 
     &__circle {
       right: -42.8rem;
@@ -1094,7 +1128,7 @@
   }
 
   .program {
-    padding-bottom: 0;
+    padding-bottom: 6.9rem;
 
     &__circle {
       left: -34.3rem;
@@ -1183,11 +1217,43 @@
   }
 
   .marketing {
-    display: none;
+    &__title {
+      margin: 0 auto 4.4rem;
+      text-align: center;
+      max-width: 32.7rem;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr;
+      justify-content: center;
+      margin: 0;
+    }
+
+    &__column {
+      padding: 0;
+      margin-bottom: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:nth-child(2n) .marketing__card {
+        margin: 0;
+      }
+    }
+
+    &__card {
+      margin: 0;
+      min-height: 27.4rem;
+    }
   }
 
   .customers {
-    padding: 6.8rem 0;
+    padding: 9.5rem 0 6.8rem;
 
     &__circle {
       right: -57.1rem;
@@ -1449,7 +1515,7 @@
 
   .program {
     padding-top: 9.2rem;
-
+    padding-bottom: 5.5rem;
     &__circle {
       width: 40rem;
       height: 40rem;
@@ -1536,8 +1602,18 @@
     }
   }
 
+  .marketing {
+    &__title {
+      margin-bottom: 4.2rem;
+    }
+
+    &__subtitle {
+      margin-bottom: 1.8rem;
+    }
+  }
+
   .customers {
-    padding: 5rem 0;
+    padding: 8.3rem 0 5rem;
 
     &__circle {
       right: -57.1rem;

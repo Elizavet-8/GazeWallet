@@ -63,6 +63,9 @@
       top: 20.4rem;
       width: 70.5rem;
       height: 75.2rem;
+      &_mobile {
+        display: none;
+      }
     }
 
     &__block {
@@ -131,6 +134,12 @@
 
     &__title {
       margin-bottom: 4.7rem;
+      margin-top: -1.1rem;
+    }
+
+    &__subtitle {
+      font-size: 2.4rem;
+      line-height: 3.1rem;
     }
 
     &__grid {
@@ -235,6 +244,10 @@
     width: 71.1rem;
     height: 75.1rem;
     z-index: 3;
+
+    &_mobile {
+      display: none;
+    }
   }
 }
 
@@ -573,15 +586,18 @@
   &__grid {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -1.45rem;
+    margin: 0;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
   }
 
   &__column {
-    padding: 1rem 1.45rem;
+    padding: 1rem 0;
     width: auto;
 
     &:nth-child(1) {
-      width: 53.3rem;
+      width: 48.4rem;
 
       .result__text {
         max-width: 24.4rem;
@@ -589,7 +605,7 @@
     }
 
     &:nth-child(2) {
-      width: 52rem;
+      width: 48.3rem;
     }
 
     &:nth-child(3) {
@@ -597,11 +613,11 @@
     }
 
     &:nth-child(4) {
-      width: 37.55rem;
+      width: 36.1rem;
     }
 
     &:nth-child(5) {
-      width: 54rem;
+      width: 48.5rem;
 
       .result__text {
         max-width: 24.4rem;
@@ -609,7 +625,7 @@
     }
 
     &:nth-child(6) {
-      width: 42.05rem;
+      width: 40.6rem;
     }
   }
 
@@ -620,12 +636,14 @@
     height: 100%;
     min-height: 31rem;
     overflow: hidden;
+    transition: 0.3s;
 
     &:hover, &:active, &:focus {
       background-image: url('../images/result-card.png');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      transform: translateY(-10px) scale(1.005) translateZ(0);
     }
   }
 
@@ -683,6 +701,7 @@
       background-repeat: no-repeat;
       color: $white;
       transition: .3s;
+      transform: translateY(-30px) scale(1.005) translateZ(0);
     }
   }
 
@@ -759,6 +778,10 @@
     width: 43.2rem;
     height: 11.3rem;
     margin-left: 5rem;
+
+    &_mobile {
+      display: none;
+    }
   }
 }
 
@@ -853,6 +876,10 @@
       padding-left: 0;
       margin-top: 4.8rem;
 
+      &__title {
+        margin-top: 0;
+      }
+
       &__grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -909,6 +936,11 @@
       left: auto;
       right: -22.2rem;
       bottom: -8.2rem;
+      display: none;
+
+      &_mobile {
+        display: block;
+      }
     }
   }
 
@@ -1141,22 +1173,22 @@
     }
 
     &__grid {
-      margin: -1.5rem;
+      margin: -1.5rem 0;
     }
 
     &__column {
-      padding: 1.5rem;
+      padding: 1.5rem 0;
 
       &:nth-child(1) {
-        width: 51rem;
+        width: 48.4rem;
       }
 
       &:nth-child(2) {
-        width: 44rem;
+        width: 41.0rem;
       }
 
       &:nth-child(3) {
-        width: 40.5rem;
+        width: 37.5rem;
 
         .result__text {
           max-width: 24.4rem;
@@ -1164,15 +1196,15 @@
       }
 
       &:nth-child(4) {
-        width: 54.9rem;
+        width: 51.9rem;
       }
 
       &:nth-child(5) {
-        width: 51.5rem;
+        width: 48.5rem;
       }
 
       &:nth-child(6) {
-        width: 43.9rem;
+        width: 40.9rem;
       }
     }
   }
@@ -1252,6 +1284,11 @@
 
     &__img {
       margin: 0;
+      display: none;
+
+      &_mobile {
+        display: block;
+      }
     }
 
     &__btn {
@@ -1671,34 +1708,34 @@
     }
 
     &__grid {
-      margin: -1.5rem -1rem;
+      margin: -1.5rem 0;
     }
 
     &__column {
-      padding: 1.5rem 1rem;
+      padding: 1.5rem 0;
 
       &:nth-child(1) {
-        max-width: 36.5rem;
+        width: 34.5rem;
       }
 
       &:nth-child(2) {
-        max-width: 29.9rem;
+        width: 27.7rem;
       }
 
       &:nth-child(3) {
-        max-width: 29.5rem;
+        width: 26.5rem;
       }
 
       &:nth-child(4) {
-        max-width: 36.9rem;
+        width: 35.9rem;
       }
 
       &:nth-child(5) {
-        max-width: 36.3rem;
+        width: 34.6rem;
       }
 
       &:nth-child(6) {
-        max-width: 30rem;
+        width: 27.9rem;
       }
     }
   }
@@ -1864,6 +1901,10 @@
         bottom: 0;
         margin-right: -5.5rem;
         margin-left: -5.6rem;
+        display: none;
+        &_mobile {
+          display: block;
+        }
       }
 
       &__block {
@@ -2185,6 +2226,12 @@
 
     &__btn {
       margin-top: 6.4rem;
+    }
+
+    &__card {
+      &:hover, &:active, &:focus {
+        transform: translateY(-15px) scale(1.005) translateZ(0);
+      }
     }
   }
 

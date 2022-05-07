@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <!-- <base href="/"> -->
     <title>
-        <!--#echo var="title" -->
+        Gaze.Wallet
     </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./dist/images/icons/favicon.png"/>
     <meta name="description" content="Startup HTML template OptimizedHTML 5">
     <meta name="csrf-token" content="XYZ123">
     <meta name="viewport"
@@ -18,7 +19,7 @@
 <header class="header">
     <div class="container">
         <div class="header__row">
-            <a class="header-logo logo" href="/">
+            <a class="header-logo logo" href="index.html">
                 <svg class="header-logo__svg logo__svg logo__svg_black" viewBox="0 0 111 27" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.7633 3.86474C18.1091 1.33651 14.777 0 11.1276 0C7.49289 0 4.16318 1.33651 1.49993 3.86347C1.2459 4.10526 1.24853 4.49427 1.50515 4.73117C1.63349 4.85019 1.79976 4.90911 1.96474 4.90911C2.13365 4.90911 2.30256 4.84773 2.43089 4.72748C4.84404 2.43743 7.85033 1.22732 11.1276 1.22732C14.4168 1.22732 17.427 2.43618 19.8297 4.72508C20.0825 4.96561 20.4975 4.96929 20.7554 4.73243C21.0133 4.49559 21.0172 4.10532 20.7633 3.86474Z"
@@ -53,10 +54,9 @@
             </a>
             <nav class="header-nav" id="nav">
                 <ul class="header-nav__list">
-                    <li class="header-nav__item"><a class="header-nav__link" href="#">О продукте</a></li>
-                    <li class="header-nav__item"><a class="header-nav__link" href="#">О нас</a></li>
-                    <li class="header-nav__item"><a class="header-nav__link" href="#">Франшиза</a></li>
-                    <li class="header-nav__item active"><a class="header-nav__link" href="#">Обучение и вебинары</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="index.html">О продукте</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="franchise.html">Франшиза</a></li>
+                    <li class="header-nav__item active"><a class="header-nav__link" href="materials.html">Обучение и вебинары</a></li>
                 </ul>
                 <a class="header__link header__link_mobile link border" href="tel:+79376226373">+7 (937) 622-63-73</a>
             </nav>
@@ -88,10 +88,10 @@
                                 и удержать их.
                             </div>
                             <button type="button" class="application-open-modal main-materials-text__btn main-button__btn link">
-                                Начать бесплатно
+                                Оставить заявку
                             </button>
                         </div>
-                        <a class="main-materials-text__link main-text__link" href="#footer">
+                        <a class="main-materials-text__link main-text__link" href="#materials">
                             <img class="main-text__svg" src="dist/images/icons/arrow-down.svg" alt="video">
                         </a>
                     </div>
@@ -108,8 +108,8 @@
             <div class="container">
                 <h2 class="materials__title">Материалы</h2>
                 <ul class="materials-accordion content__list">
-                    <li class="materials-accordion__item active">
-                        <div class="materials-accordion__head content__item">
+                    <li class="materials-accordion__item">
+                        <div class="materials-accordion__head content__item active">
                             <div class="materials-accordion__texts content__texts">
                                 <h3 class="materials-accordion__subtitle content__subtitle">
                                     Обучение
@@ -214,7 +214,7 @@
         <div class="container">
             <div class="footer__row">
                 <div class="footer__column">
-                    <a class="footer-logo logo" href="/">
+                    <a class="footer-logo logo" href="index.html">
                         <svg class="footer-logo__svg logo__svg logo__svg_white" viewBox="0 0 111 27" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.7633 3.86474C18.1091 1.33651 14.777 0 11.1276 0C7.49289 0 4.16318 1.33651 1.49993 3.86347C1.2459 4.10526 1.24853 4.49427 1.50515 4.73117C1.63349 4.85019 1.79976 4.90911 1.96474 4.90911C2.13365 4.90911 2.30256 4.84773 2.43089 4.72748C4.84404 2.43743 7.85033 1.22732 11.1276 1.22732C14.4168 1.22732 17.427 2.43618 19.8297 4.72508C20.0825 4.96561 20.4975 4.96929 20.7554 4.73243C21.0133 4.49559 21.0172 4.10532 20.7633 3.86474Z"
@@ -249,16 +249,19 @@
                     </a>
                     <ul class="footer__list">
                         <li class="footer__item">
-                            О продукте
+                            <a href="index.html" class="footer__link">
+                                О продукте
+                            </a>
                         </li>
                         <li class="footer__item">
-                            О нас
+                            <a href="franchise.html" class="footer__link">
+                                Франшиза
+                            </a>
                         </li>
                         <li class="footer__item">
-                            Франшиза
-                        </li>
-                        <li class="footer__item">
-                            Обучение и вебинары
+                            <a href="materials.html" class="footer__link">
+                                Обучение и вебинары
+                            </a>
                         </li>
                     </ul>
                 </div>

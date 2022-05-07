@@ -2,10 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <!-- <base href="/"> -->
+    <!-- <base href="index.html"> -->
     <title>
-        <!--#echo var="title" -->
+        Gaze.Wallet
     </title>
+    <link rel="shortcut icon" type="image/x-icon" href="./dist/images/icons/favicon.png"/>
     <meta name="description" content="Startup HTML template OptimizedHTML 5">
     <meta name="csrf-token" content="XYZ123">
     <meta name="viewport"
@@ -18,7 +19,7 @@
 <header class="header">
     <div class="container">
         <div class="header__row">
-            <a class="header-logo logo" href="/">
+            <a class="header-logo logo" href="index.html">
                 <svg class="header-logo__svg logo__svg logo__svg_black" viewBox="0 0 111 27" fill="none"
                      xmlns="http://www.w3.org/2000/svg">
                     <path d="M20.7633 3.86474C18.1091 1.33651 14.777 0 11.1276 0C7.49289 0 4.16318 1.33651 1.49993 3.86347C1.2459 4.10526 1.24853 4.49427 1.50515 4.73117C1.63349 4.85019 1.79976 4.90911 1.96474 4.90911C2.13365 4.90911 2.30256 4.84773 2.43089 4.72748C4.84404 2.43743 7.85033 1.22732 11.1276 1.22732C14.4168 1.22732 17.427 2.43618 19.8297 4.72508C20.0825 4.96561 20.4975 4.96929 20.7554 4.73243C21.0133 4.49559 21.0172 4.10532 20.7633 3.86474Z"
@@ -53,10 +54,9 @@
             </a>
             <nav class="header-nav" id="nav">
                 <ul class="header-nav__list">
-                    <li class="header-nav__item active"><a class="header-nav__link" href="#">О продукте</a></li>
-                    <li class="header-nav__item"><a class="header-nav__link" href="#">О нас</a></li>
-                    <li class="header-nav__item"><a class="header-nav__link" href="#">Франшиза</a></li>
-                    <li class="header-nav__item"><a class="header-nav__link" href="#">Обучение и вебинары</a></li>
+                    <li class="header-nav__item active"><a class="header-nav__link" href="index.html">О продукте</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="franchise.html">Франшиза</a></li>
+                    <li class="header-nav__item"><a class="header-nav__link" href="materials.html">Обучение и вебинары</a></li>
                 </ul>
                 <a class="header__link header__link_mobile link border" href="tel:+79376226373">+7 (937) 622-63-73</a>
             </nav>
@@ -87,9 +87,9 @@
                                 клиентов.
                             </div>
                             <div class="main-button__row">
-                                <button type="button" class="application-open-modal main-button__btn link">
+                                <a href="https://wgaze.ru/" target="_blank" class="main-button__btn link">
                                     Начать бесплатно
-                                </button>
+                                </a>
                                 <a href="https://www.youtube.com/watch?v=j8S0F-rP9v0"
                                    class="main-button main-button-video border border-none link tube">
                                     <img class="main-button__icon" src="dist/images/icons/play.png" alt="video">
@@ -97,7 +97,7 @@
                                 </a>
                             </div>
                         </div>
-                        <a class="main-text__link" href="#footer">
+                        <a class="main-text__link" href="#program">
                             <img class="main-text__svg" src="dist/images/icons/arrow-down.svg" alt="video">
                         </a>
                     </div>
@@ -273,8 +273,11 @@
                         <div class="marketing__card card">
                             <div class="marketing__head card__head">
                                 <div class="marketing__icon card__icon">
-                                    <img class="marketing__svg card__svg" src="dist/images/icons/cake.svg"
-                                         alt="marketing">
+                                    <svg class="marketing__svg card__svg" width="25" height="24" viewBox="0 0 25 24"
+                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22 5.375H19.4112C19.5419 5.00688 19.625 4.60313 19.625 4.1875C19.625 2.21625 18.0338 0.625 16.0625 0.625C14.8156 0.625 13.735 1.26625 13.0938 2.22812L12.5 3.02375L11.9062 2.21625C11.265 1.26625 10.1844 0.625 8.9375 0.625C6.96625 0.625 5.375 2.21625 5.375 4.1875C5.375 4.60313 5.45812 5.00688 5.58875 5.375H3C1.68187 5.375 0.636875 6.43187 0.636875 7.75L0.625 20.8125C0.625 22.1306 1.68187 23.1875 3 23.1875H22C23.3181 23.1875 24.375 22.1306 24.375 20.8125V7.75C24.375 6.43187 23.3181 5.375 22 5.375ZM16.0625 3C16.7156 3 17.25 3.53437 17.25 4.1875C17.25 4.84062 16.7156 5.375 16.0625 5.375C15.4094 5.375 14.875 4.84062 14.875 4.1875C14.875 3.53437 15.4094 3 16.0625 3ZM8.9375 3C9.59062 3 10.125 3.53437 10.125 4.1875C10.125 4.84062 9.59062 5.375 8.9375 5.375C8.28438 5.375 7.75 4.84062 7.75 4.1875C7.75 3.53437 8.28438 3 8.9375 3ZM22 20.8125H3V18.4375H22V20.8125ZM22 14.875H3V8.9375C3 8.28438 3.53437 7.75 4.1875 7.75H9.0325L7.275 10.1488C6.88312 10.6831 7.00188 11.4313 7.53625 11.8112C8.05875 12.1912 8.80688 12.0725 9.18688 11.55L12.5 7.0375L15.8131 11.55C16.1931 12.0725 16.9412 12.1912 17.4638 11.8112C17.9981 11.4313 18.1169 10.6831 17.725 10.1488L15.9675 7.75H20.8125C21.4656 7.75 22 8.28438 22 8.9375V14.875Z"
+                                              fill="white"/>
+                                    </svg>
                                 </div>
                                 <h5 class="marketing__subtitle card__subtitle">
                                     Привилегии<br> и акции
@@ -291,8 +294,11 @@
                         <div class="marketing__card card">
                             <div class="marketing__head card__head">
                                 <div class="marketing__icon card__icon">
-                                    <img class="marketing__svg card__svg" src="dist/images/icons/smile.svg"
-                                         alt="marketing">
+                                    <svg class="marketing__svg card__svg" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18.6562 13.3125C19.64 13.3125 20.4375 12.515 20.4375 11.5312C20.4375 10.5475 19.64 9.75 18.6562 9.75C17.6725 9.75 16.875 10.5475 16.875 11.5312C16.875 12.515 17.6725 13.3125 18.6562 13.3125Z" fill="white"/>
+                                        <path d="M10.3438 13.3125C11.3275 13.3125 12.125 12.515 12.125 11.5312C12.125 10.5475 11.3275 9.75 10.3438 9.75C9.35999 9.75 8.5625 10.5475 8.5625 11.5312C8.5625 12.515 9.35999 13.3125 10.3438 13.3125Z" fill="white"/>
+                                        <path d="M14.4881 2.625C7.93312 2.625 2.625 7.945 2.625 14.5C2.625 21.055 7.93312 26.375 14.4881 26.375C21.055 26.375 26.375 21.055 26.375 14.5C26.375 7.945 21.055 2.625 14.4881 2.625ZM14.5 24C9.25125 24 5 19.7488 5 14.5C5 9.25125 9.25125 5 14.5 5C19.7488 5 24 9.25125 24 14.5C24 19.7488 19.7488 24 14.5 24ZM19.7369 16.7444C19.3212 16.4831 18.7631 16.6138 18.5138 17.0294C17.635 18.4188 16.1387 19.25 14.5 19.25C12.8613 19.25 11.365 18.4187 10.4862 17.0175C10.225 16.6019 9.67875 16.4713 9.26313 16.7325C8.8475 16.9938 8.71687 17.54 8.97812 17.9556C10.1894 19.8912 12.2438 21.0312 14.5 21.0312C16.7562 21.0312 18.8106 19.8794 20.0219 17.9675C20.2831 17.5519 20.1525 17.0056 19.7369 16.7444Z" fill="white"/>
+                                    </svg>
                                 </div>
                                 <h5 class="marketing__subtitle card__subtitle">
                                     Анализ<br> и сегментация гостей
@@ -309,8 +315,9 @@
                         <div class="marketing__card card">
                             <div class="marketing__head card__head">
                                 <div class="marketing__icon card__icon">
-                                    <img class="marketing__svg card__svg" src="dist/images/icons/users.svg"
-                                         alt="marketing">
+                                    <svg class="marketing__svg card__svg" width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M18 8.0625C19.9713 8.0625 21.5506 6.47125 21.5506 4.5C21.5506 2.52875 19.9713 0.9375 18 0.9375C16.0288 0.9375 14.4375 2.52875 14.4375 4.5C14.4375 6.47125 16.0288 8.0625 18 8.0625ZM8.5 8.0625C10.4712 8.0625 12.0506 6.47125 12.0506 4.5C12.0506 2.52875 10.4712 0.9375 8.5 0.9375C6.52875 0.9375 4.9375 2.52875 4.9375 4.5C4.9375 6.47125 6.52875 8.0625 8.5 8.0625ZM8.5 10.4375C5.73313 10.4375 0.1875 11.8269 0.1875 14.5938V16.375C0.1875 17.0281 0.721875 17.5625 1.375 17.5625H15.625C16.2781 17.5625 16.8125 17.0281 16.8125 16.375V14.5938C16.8125 11.8269 11.2669 10.4375 8.5 10.4375ZM18 10.4375C17.6556 10.4375 17.2638 10.4613 16.8481 10.4969C16.8719 10.5087 16.8837 10.5325 16.8956 10.5444C18.2494 11.53 19.1875 12.8481 19.1875 14.5938V16.375C19.1875 16.7906 19.1044 17.1944 18.9737 17.5625H25.125C25.7781 17.5625 26.3125 17.0281 26.3125 16.375V14.5938C26.3125 11.8269 20.7669 10.4375 18 10.4375Z" fill="white"/>
+                                    </svg>
                                 </div>
                                 <h5 class="marketing__subtitle card__subtitle">
                                     Рассылки
@@ -327,8 +334,9 @@
                         <div class="marketing__card card">
                             <div class="marketing__head card__head">
                                 <div class="marketing__icon card__icon">
-                                    <img class="marketing__svg card__svg" src="dist/images/icons/tv.svg"
-                                         alt="marketing">
+                                    <svg class="marketing__svg card__svg" width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M23.9375 0.375H2.5625C1.25625 0.375 0.1875 1.44375 0.1875 2.75V17C0.1875 18.3062 1.25625 19.375 2.5625 19.375H10.875L8.93937 22.2844C8.41687 23.0681 8.975 24.125 9.925 24.125H16.575C17.525 24.125 18.095 23.0681 17.5606 22.2844L15.625 19.375H23.9375C25.2437 19.375 26.3125 18.3062 26.3125 17V2.75C26.3125 1.44375 25.2437 0.375 23.9375 0.375ZM23.9375 14.625H2.5625V3.9375C2.5625 3.28437 3.09687 2.75 3.75 2.75H22.75C23.4031 2.75 23.9375 3.28437 23.9375 3.9375V14.625Z" fill="white"/>
+                                    </svg>
                                 </div>
                                 <h5 class="marketing__subtitle card__subtitle_big card__subtitle">
                                     Дашборд<br> эффективности бизнеса
@@ -426,9 +434,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="rates__icon content__icon">
+                        <a href="https://wgaze.ru/" target="_blank" class="rates__icon content__icon">
                             <img class="rates__svg content__svg" src="dist/images/icons/arrow-right.svg" alt="arrow">
-                        </div>
+                        </a>
                     </li>
                     <li class="rates__item content__item">
                         <div class="rates__texts content__texts">
@@ -442,7 +450,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="rates__icon content__icon">
+                        <div class="rates__icon content__icon opportunities-open-modal">
                             <img class="rates__svg content__svg" src="dist/images/icons/arrow-right.svg" alt="rates">
                         </div>
                     </li>
@@ -475,7 +483,7 @@
         <div class="container">
             <div class="footer__row">
                 <div class="footer__column">
-                    <a class="footer-logo logo" href="/">
+                    <a class="footer-logo logo" href="index.html">
                         <svg class="footer-logo__svg logo__svg logo__svg_white" viewBox="0 0 111 27" fill="none"
                              xmlns="http://www.w3.org/2000/svg">
                             <path d="M20.7633 3.86474C18.1091 1.33651 14.777 0 11.1276 0C7.49289 0 4.16318 1.33651 1.49993 3.86347C1.2459 4.10526 1.24853 4.49427 1.50515 4.73117C1.63349 4.85019 1.79976 4.90911 1.96474 4.90911C2.13365 4.90911 2.30256 4.84773 2.43089 4.72748C4.84404 2.43743 7.85033 1.22732 11.1276 1.22732C14.4168 1.22732 17.427 2.43618 19.8297 4.72508C20.0825 4.96561 20.4975 4.96929 20.7554 4.73243C21.0133 4.49559 21.0172 4.10532 20.7633 3.86474Z"
@@ -510,16 +518,19 @@
                     </a>
                     <ul class="footer__list">
                         <li class="footer__item">
-                            О продукте
+                            <a href="index.html" class="footer__link">
+                                О продукте
+                            </a>
                         </li>
                         <li class="footer__item">
-                            О нас
+                            <a href="franchise.html" class="footer__link">
+                                Франшиза
+                            </a>
                         </li>
                         <li class="footer__item">
-                            Франшиза
-                        </li>
-                        <li class="footer__item">
-                            Обучение и вебинары
+                            <a href="materials.html" class="footer__link">
+                                Обучение и вебинары
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -596,7 +607,7 @@
         </form>
     </div>
     <div id="application-modal" class="wg-modal">
-        <form  id="application-form" class="form">
+        <form id="application-form" class="form">
             <h2 class="form__title">
                 Оформление заявки
             </h2>
