@@ -190,6 +190,38 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         }
     });
+    $("#opportunities-gaze-form").validate({
+        rules: {
+            name: {
+                required: true,
+            },
+            phone: {
+                required: true,
+                minlength: 16
+            },
+            email: {
+                email: true
+            },
+            city: {
+                required: true,
+            },
+        },
+        messages: {
+            name: {
+                required: 'Поле обязательно для заполнения',
+            },
+            phone: {
+                required: 'Поле обязательно для заполнения',
+                minlength: 'Введите номер в формате "+7 (123) 456-78-90"'
+            },
+            email: {
+                email: 'Введите корректный email'
+            },
+            city: {
+                required: 'Поле обязательно для заполнения',
+            },
+        }
+    });
 
     //аккардион
     $(".materials-accordion__head.active").next(".materials-accordion__body").slideDown();

@@ -3,6 +3,9 @@
 
   &__title {
     max-width: 49.6rem;
+    &_max-width {
+      max-width: 100%;
+    }
   }
 
   &__caption {
