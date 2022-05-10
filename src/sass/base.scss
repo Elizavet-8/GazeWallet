@@ -624,6 +624,9 @@ input {
   html {
     font-size: 100vw / (1366/10);
   }
+  #videotube-modal-container {
+    padding: 5rem;
+  }
 }
 
 
@@ -643,13 +646,6 @@ input {
   main {
     overflow: hidden;
   }
-  #videotube-modal-container {
-    padding: 5rem;
-  }
-  #videotube-modal-close {
-    right: 3.2rem;
-    top: 2.7rem;
-  }
 }
 
 @media only screen and (max-width: $small-tablet) {
@@ -663,9 +659,6 @@ input {
   h2 {
     font-size: 3.4rem;
     line-height: 4.4rem;
-  }
-  #videotube-modal-close {
-    top: 7.5rem;
   }
 }
 
@@ -697,10 +690,6 @@ input {
   }
   #videotube-modal-container {
     padding: 2rem;
-  }
-  #videotube-modal-close {
-    top: 25%;
-    right: 2rem;
   }
 }
 
@@ -744,9 +733,5 @@ input {
   }
   #videotube-modal-container {
     padding: 1.2rem;
-  }
-  #videotube-modal-close {
-    top: 30%;
-    right: 1.2rem;
   }
 }
