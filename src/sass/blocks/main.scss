@@ -41,7 +41,8 @@
 
     &__link {
       margin-top: 26.8rem;
-      //margin-top: 5rem;
+      position: relative;
+      z-index: 5;
       display: block;
     }
 

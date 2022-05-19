@@ -223,6 +223,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+
     //аккардион
     $(".materials-accordion__head.active").next(".materials-accordion__body").slideDown();
     $('.materials-accordion').on('click', '.materials-accordion__head', function (e) {
